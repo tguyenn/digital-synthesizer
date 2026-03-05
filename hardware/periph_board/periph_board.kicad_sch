@@ -20580,7 +20580,7 @@
 		(dnp no)
 		(uuid "56267ffa-0f0a-4fb7-9856-c650a14b9849")
 		(property "Reference" "C101"
-			(at 185.674 75.692 0)
+			(at 187.96 73.152 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20589,7 +20589,7 @@
 			)
 		)
 		(property "Value" "1u"
-			(at 185.674 73.152 0)
+			(at 186.944 75.692 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21509,7 +21509,7 @@
 		(dnp no)
 		(uuid "db09c16e-7b48-40ec-ae05-c10e69bfb902")
 		(property "Reference" "C100"
-			(at 201.93 37.084 0)
+			(at 201.93 34.544 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21518,7 +21518,7 @@
 			)
 		)
 		(property "Value" "1u"
-			(at 201.93 34.544 0)
+			(at 201.93 37.084 0)
 			(effects
 				(font
 					(size 1.27 1.27)
