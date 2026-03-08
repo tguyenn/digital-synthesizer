@@ -1,0 +1,30 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "e31b3196-a18a-4b28-819c-3ce63927efcb")
+	(paper "A4")
+	(lib_symbols)
+	(hierarchical_label "ADC_IN"
+		(shape output)
+		(at 43.18 26.67 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "0c1855da-b8cf-4204-ad96-394ed565bee3")
+	)
+	(hierarchical_label "DAC_OUT"
+		(shape output)
+		(at 43.18 22.86 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f726ab29-7729-4733-8b36-5297dff47390")
+	)
+)

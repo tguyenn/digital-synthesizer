@@ -20601,7 +20601,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "02fa3481-b594-45f4-8b76-d887b1ea5e1a")
-		(property "Reference" "TP104"
+		(property "Reference" "TP105"
 			(at 103.632 35.306 0)
 			(effects
 				(font
@@ -20652,7 +20652,7 @@
 		(instances
 			(project "periph_board"
 				(path "/79c81e35-5d93-46ac-8618-81a3b824b0cd"
-					(reference "TP104")
+					(reference "TP105")
 					(unit 1)
 				)
 			)
@@ -20988,7 +20988,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "16090f8f-81a9-46ac-a8cd-b641d5b8b560")
-		(property "Reference" "TP113"
+		(property "Reference" "TP102"
 			(at 244.348 24.638 0)
 			(effects
 				(font
@@ -21039,7 +21039,7 @@
 		(instances
 			(project "periph_board"
 				(path "/79c81e35-5d93-46ac-8618-81a3b824b0cd"
-					(reference "TP113")
+					(reference "TP102")
 					(unit 1)
 				)
 			)
@@ -21557,7 +21557,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "480f4518-a123-4792-8497-f15d71838eda")
-		(property "Reference" "TP103"
+		(property "Reference" "TP104"
 			(at 114.046 29.718 0)
 			(effects
 				(font
@@ -21608,7 +21608,7 @@
 		(instances
 			(project "periph_board"
 				(path "/79c81e35-5d93-46ac-8618-81a3b824b0cd"
-					(reference "TP103")
+					(reference "TP104")
 					(unit 1)
 				)
 			)
@@ -21623,7 +21623,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4f4689da-c2bf-4d4a-9239-63233ece5487")
-		(property "Reference" "TP108"
+		(property "Reference" "TP110"
 			(at 103.632 53.086 0)
 			(effects
 				(font
@@ -21674,7 +21674,7 @@
 		(instances
 			(project "periph_board"
 				(path "/79c81e35-5d93-46ac-8618-81a3b824b0cd"
-					(reference "TP108")
+					(reference "TP110")
 					(unit 1)
 				)
 			)
@@ -21689,7 +21689,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "52024268-b0c8-4ecd-9e8e-470dbd5ec1a0")
-		(property "Reference" "TP109"
+		(property "Reference" "TP111"
 			(at 107.95 55.626 0)
 			(effects
 				(font
@@ -21740,7 +21740,7 @@
 		(instances
 			(project "periph_board"
 				(path "/79c81e35-5d93-46ac-8618-81a3b824b0cd"
-					(reference "TP109")
+					(reference "TP111")
 					(unit 1)
 				)
 			)
@@ -22236,7 +22236,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "82a1baaa-ac44-47b1-83a2-dd3f25e99d71")
-		(property "Reference" "TP107"
+		(property "Reference" "TP109"
 			(at 114.046 47.498 0)
 			(effects
 				(font
@@ -22287,7 +22287,7 @@
 		(instances
 			(project "periph_board"
 				(path "/79c81e35-5d93-46ac-8618-81a3b824b0cd"
-					(reference "TP107")
+					(reference "TP109")
 					(unit 1)
 				)
 			)
@@ -22433,7 +22433,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a79bafb9-a274-48a4-9956-9f228056fed4")
-		(property "Reference" "TP110"
+		(property "Reference" "TP112"
 			(at 111.76 59.69 0)
 			(effects
 				(font
@@ -22484,7 +22484,7 @@
 		(instances
 			(project "periph_board"
 				(path "/79c81e35-5d93-46ac-8618-81a3b824b0cd"
-					(reference "TP110")
+					(reference "TP112")
 					(unit 1)
 				)
 			)
@@ -22761,7 +22761,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c5b728e2-079b-49cd-96d4-8fe3ba498a13")
-		(property "Reference" "TP102"
+		(property "Reference" "TP103"
 			(at 111.76 24.13 0)
 			(effects
 				(font
@@ -22812,7 +22812,7 @@
 		(instances
 			(project "periph_board"
 				(path "/79c81e35-5d93-46ac-8618-81a3b824b0cd"
-					(reference "TP102")
+					(reference "TP103")
 					(unit 1)
 				)
 			)
@@ -22827,7 +22827,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c70677d6-bbac-469f-9fe8-76dd397e3bad")
-		(property "Reference" "TP106"
+		(property "Reference" "TP107"
 			(at 111.76 41.91 0)
 			(effects
 				(font
@@ -22878,7 +22878,7 @@
 		(instances
 			(project "periph_board"
 				(path "/79c81e35-5d93-46ac-8618-81a3b824b0cd"
-					(reference "TP106")
+					(reference "TP107")
 					(unit 1)
 				)
 			)
@@ -22893,7 +22893,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c72d4bb7-8251-49b9-ab4c-dd37ab2bb596")
-		(property "Reference" "TP111"
+		(property "Reference" "TP113"
 			(at 114.046 65.278 0)
 			(effects
 				(font
@@ -22944,7 +22944,7 @@
 		(instances
 			(project "periph_board"
 				(path "/79c81e35-5d93-46ac-8618-81a3b824b0cd"
-					(reference "TP111")
+					(reference "TP113")
 					(unit 1)
 				)
 			)
@@ -23432,7 +23432,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f165773b-fbeb-42b4-8834-0a06fecc1150")
-		(property "Reference" "TP112"
+		(property "Reference" "TP108"
 			(at 45.212 47.498 0)
 			(effects
 				(font
@@ -23483,7 +23483,7 @@
 		(instances
 			(project "periph_board"
 				(path "/79c81e35-5d93-46ac-8618-81a3b824b0cd"
-					(reference "TP112")
+					(reference "TP108")
 					(unit 1)
 				)
 			)
@@ -23498,7 +23498,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f1bd6ae6-ffc7-46ed-8a57-91c1c03d1a73")
-		(property "Reference" "TP105"
+		(property "Reference" "TP106"
 			(at 107.95 37.846 0)
 			(effects
 				(font
@@ -23549,7 +23549,7 @@
 		(instances
 			(project "periph_board"
 				(path "/79c81e35-5d93-46ac-8618-81a3b824b0cd"
-					(reference "TP105")
+					(reference "TP106")
 					(unit 1)
 				)
 			)

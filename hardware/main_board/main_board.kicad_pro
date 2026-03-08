@@ -571,6 +571,36 @@
           "label": "#",
           "name": "${ITEM_NUMBER}",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer",
+          "name": "Manufacturer",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "P/N",
+          "name": "P/N",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Cost",
+          "name": "Cost",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Distributor",
+          "name": "Distributor",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "LCSC Part #",
+          "name": "LCSC Part #",
+          "show": false
         }
       ],
       "filter_string": "",
@@ -626,34 +656,6 @@
       "Root"
     ],
     [
-      "1f5f1fcf-8246-4477-bb34-eca921fd147d",
-      "Periph Board 1"
-    ],
-    [
-      "f2fb7dbf-8d10-4d48-b0f8-a36abcf6881c",
-      "TEMP"
-    ],
-    [
-      "5b0a4642-144e-4945-bf5c-6d00013df1a8",
-      "Periph Board 2"
-    ],
-    [
-      "c23f013f-c172-44ea-a430-b28a1dc4e997",
-      "Periph Board 3"
-    ],
-    [
-      "a0a99868-89e0-4883-a19f-c13e806883a3",
-      "Periph Board 4"
-    ],
-    [
-      "243be2d0-a4e8-4a5c-8c93-adc2a4222a77",
-      "Periph Board 5"
-    ],
-    [
-      "e7648fdc-6fe1-4c81-b7ae-e7734f0e7539",
-      "Periph Board 6"
-    ],
-    [
       "2a4ecabb-e925-4920-b423-8767a20f726c",
       "MCU"
     ],
@@ -672,6 +674,10 @@
     [
       "9623dd3b-8db3-4512-88be-dd962a96388d",
       "Audio IO"
+    ],
+    [
+      "699e22c4-7494-4d98-a0c1-55c97e2e9226",
+      "POWER"
     ],
     [
       "5f6e8c8b-8839-490d-945a-17905525bfda",
@@ -696,10 +702,6 @@
     [
       "243be2d0-a4e8-4a5c-8c93-adc2a4222a77",
       "Periph Board 5"
-    ],
-    [
-      "e7648fdc-6fe1-4c81-b7ae-e7734f0e7539",
-      "Periph Board 6"
     ]
   ],
   "text_variables": {}
