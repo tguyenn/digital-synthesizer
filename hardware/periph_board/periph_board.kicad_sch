@@ -869,6 +869,170 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "ECE445L:C_Polarized"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C_Polarized"
+				(at 0.635 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "ECE445L:CP_Radial_Tantal200mil"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Polarized capacitor, US symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "CP_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_Polarized_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 2.286) (xy -0.762 2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 1.778) (xy -1.27 2.794)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -2.032 -1.27)
+					(mid 0 -0.5572)
+					(end 2.032 -1.27)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_Polarized_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 3.302)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "ECE445L:LM2937ET-3.3_NOPB"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -21898,7 +22062,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10u"
+		(property "Value" "4u7"
 			(at 152.4 33.6549 0)
 			(effects
 				(font
@@ -21907,7 +22071,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SamacSys_Parts:0805_polarized"
+		(property "Footprint" "445L:CP_Radial_Tantal200mil"
 			(at 148.59 33.02 0)
 			(effects
 				(font
@@ -21934,7 +22098,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Inventory" "https://www.mouser.com/ProductDetail/KYOCERA-AVX/TCP1A106M8R?qs=sGAEpiMZZMtZ1n0r9vR22blfza6EDqdqKChrjBJniGMwR4ZbZ0PzAQ%3D%3D"
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/KYOCERA-AVX/TCP1A106M8R?qs=sGAEpiMZZMtZ1n0r9vR22blfza6EDqdqKChrjBJniGMwR4ZbZ0PzAQ%3D%3D"
 			(at 148.59 33.02 0)
 			(effects
 				(font
@@ -23825,8 +23989,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 118.11 33.02 180)
+		(lib_id "ECE445L:C_Polarized")
+		(at 118.11 33.02 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -23834,7 +23998,7 @@
 		(dnp no)
 		(uuid "f9822669-fde7-45be-b215-5a285f2d0730")
 		(property "Reference" "C100"
-			(at 115.57 32.004 0)
+			(at 120.65 34.036 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23842,8 +24006,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1u"
-			(at 115.57 34.544 0)
+		(property "Value" "4u7"
+			(at 120.65 31.496 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23851,8 +24015,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 117.1448 29.21 0)
+		(property "Footprint" "445L:CP_Radial_Tantal200mil"
+			(at 119.0752 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24059,7 +24223,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "HALL_ARR.kicad_sch"
+		(property "Sheetfile" "hall_arr.kicad_sch"
 			(at 50.8 81.8646 0)
 			(effects
 				(font

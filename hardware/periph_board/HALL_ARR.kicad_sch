@@ -2249,7 +2249,7 @@
 			(uuid "f03216eb-6bab-44ee-9bde-b839f0ad8817")
 		)
 		(instances
-			(project ""
+			(project "periph_board"
 				(path "/79c81e35-5d93-46ac-8618-81a3b824b0cd/72479d84-48b0-4d28-b639-95db8cc5314b"
 					(reference "#PWR0200")
 					(unit 1)
@@ -2536,7 +2536,7 @@
 			(uuid "6c397126-abb1-4e4c-89e3-8e6eb693ca55")
 		)
 		(instances
-			(project ""
+			(project "periph_board"
 				(path "/79c81e35-5d93-46ac-8618-81a3b824b0cd/72479d84-48b0-4d28-b639-95db8cc5314b"
 					(reference "C209")
 					(unit 1)
@@ -5447,7 +5447,7 @@
 			(uuid "2cb6df03-c276-4a9b-bd2d-20b6f943d4aa")
 		)
 		(instances
-			(project ""
+			(project "periph_board"
 				(path "/79c81e35-5d93-46ac-8618-81a3b824b0cd/72479d84-48b0-4d28-b639-95db8cc5314b"
 					(reference "#PWR0203")
 					(unit 1)

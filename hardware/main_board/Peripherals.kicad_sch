@@ -1489,7 +1489,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_2x05_P2.54mm_Vertical"
+		(property "Footprint" "SamacSys_Parts:logic_analyzer_slot_2x5_2.54mm"
 			(at 73.66 35.56 0)
 			(effects
 				(font

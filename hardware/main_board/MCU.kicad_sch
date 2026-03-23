@@ -3610,6 +3610,16 @@
 	)
 	(wire
 		(pts
+			(xy 46.99 101.6) (xy 45.72 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0234e1f5-c005-4c05-b11e-6b63baf8fac6")
+	)
+	(wire
+		(pts
 			(xy 81.28 71.12) (xy 81.28 72.39)
 		)
 		(stroke
@@ -4190,6 +4200,16 @@
 	)
 	(wire
 		(pts
+			(xy 45.72 99.06) (xy 46.99 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ad0087ba-2475-4707-9073-f1b451c598c7")
+	)
+	(wire
+		(pts
 			(xy 27.94 132.08) (xy 27.94 133.35)
 		)
 		(stroke
@@ -4558,6 +4578,16 @@
 		)
 		(uuid "3de11747-1878-4bd0-b12e-a9e38fc700a4")
 	)
+	(label "RXD"
+		(at 46.99 99.06 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3fb5245f-1c46-452f-b05f-49967d1578ed")
+	)
 	(label "SPI0.SCK"
 		(at 144.78 69.85 180)
 		(effects
@@ -4808,6 +4838,16 @@
 		)
 		(uuid "97d2a757-bccd-4aeb-9713-c56087b29a70")
 	)
+	(label "TXD"
+		(at 46.99 101.6 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a5d3c003-2199-4a23-a40c-f592935430b8")
+	)
 	(label "SPI0.MOSI"
 		(at 31.75 49.53 0)
 		(effects
@@ -4919,6 +4959,17 @@
 		)
 		(uuid "44179419-65d4-4362-8cfc-46fdc6adad73")
 	)
+	(hierarchical_label "RXD"
+		(shape input)
+		(at 45.72 99.06 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "59cc1e6f-313d-4e52-a5ba-cf3e6bf3629c")
+	)
 	(hierarchical_label "CS_SD"
 		(shape output)
 		(at 27.94 57.15 180)
@@ -4995,6 +5046,17 @@
 			(justify right)
 		)
 		(uuid "ab36704a-36ad-4829-b7fa-a16e4503d5fe")
+	)
+	(hierarchical_label "TXD"
+		(shape output)
+		(at 45.72 101.6 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "af7705bb-39fa-4685-8190-7dfcd11f2776")
 	)
 	(hierarchical_label "DAC_OUT"
 		(shape output)
@@ -5113,7 +5175,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_2x05_P2.54mm_Vertical"
+		(property "Footprint" "SamacSys_Parts:logic_analyzer_slot_2x5_2.54mm"
 			(at 140.97 110.49 0)
 			(effects
 				(font
@@ -5239,76 +5301,6 @@
 			(project "main_board"
 				(path "/5332464e-0c3a-49d2-8fb5-731d0e42ee15/2a4ecabb-e925-4920-b423-8767a20f726c"
 					(reference "#PWR06")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "ECE445L:LED")
-		(at 40.64 128.27 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0cf583ff-c30a-4dda-921b-9892a5a9ec02")
-		(property "Reference" "D2"
-			(at 43.18 128.5874 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "PWR_LED"
-			(at 43.18 131.1274 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "445L:LED_D5.0mm"
-			(at 40.64 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://users.ece.utexas.edu/~valvano/mspm0/HLMP-4700.pdf"
-			(at 40.64 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 40.64 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "fe30a7b6-e367-4ffa-8405-d93208872bbd")
-		)
-		(pin "2"
-			(uuid "8d42e462-d258-46cd-9c2e-fb02ca74a872")
-		)
-		(instances
-			(project "main_board"
-				(path "/5332464e-0c3a-49d2-8fb5-731d0e42ee15/2a4ecabb-e925-4920-b423-8767a20f726c"
-					(reference "D2")
 					(unit 1)
 				)
 			)
@@ -5511,6 +5503,127 @@
 			(project "main_board"
 				(path "/5332464e-0c3a-49d2-8fb5-731d0e42ee15/2a4ecabb-e925-4920-b423-8767a20f726c"
 					(reference "SW1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ECE445L:LED")
+		(at 29.21 128.27 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2522066a-9999-456c-be8f-e57f531b9baa")
+		(property "Reference" "LED1"
+			(at 17.78 127.762 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "RUN_LED"
+			(at 17.78 130.302 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "SamacSys_Parts:LEDC2012X40N"
+			(at 41.91 221.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.datasheetarchive.com/originals/distributors/DKDS-18/344792.pdf"
+			(at 41.91 321.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Description" "Standard LEDs - SMD Super Red, 633nm 180mcd, 20mA"
+			(at 29.21 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "0.4"
+			(at 41.91 521.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "720-LSR976-NR-1"
+			(at 41.91 621.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/ams-OSRAM/LS-R976-NR-1?qs=K5ta8V%252BWhtZhvCAe1sTZFg%3D%3D"
+			(at 41.91 721.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "ams OSRAM"
+			(at 41.91 821.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "LS R976-NR-1"
+			(at 41.91 921.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "4e596666-b4a4-4fa0-ada5-31533fcf1e77")
+		)
+		(pin "1"
+			(uuid "54a3e92f-914d-4d10-9b1c-4b8dc5292ce6")
+		)
+		(instances
+			(project ""
+				(path "/5332464e-0c3a-49d2-8fb5-731d0e42ee15/2a4ecabb-e925-4920-b423-8767a20f726c"
+					(reference "LED1")
 					(unit 1)
 				)
 			)
@@ -6209,6 +6322,128 @@
 			(project "main_board"
 				(path "/5332464e-0c3a-49d2-8fb5-731d0e42ee15/2a4ecabb-e925-4920-b423-8767a20f726c"
 					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ECE445L:LED")
+		(at 40.64 128.27 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7c651423-7933-4548-99a0-1c9ef1a3624f")
+		(property "Reference" "LED2"
+			(at 43.18 128.5874 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "PWR_LED"
+			(at 43.18 131.1274 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "SamacSys_Parts:LEDC2012X40N"
+			(at 53.34 221.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.datasheetarchive.com/originals/distributors/DKDS-18/344792.pdf"
+			(at 53.34 321.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Description" "Standard LEDs - SMD Super Red, 633nm 180mcd, 20mA"
+			(at 40.64 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "0.4"
+			(at 53.34 521.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "720-LSR976-NR-1"
+			(at 53.34 621.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/ams-OSRAM/LS-R976-NR-1?qs=K5ta8V%252BWhtZhvCAe1sTZFg%3D%3D"
+			(at 53.34 721.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "ams OSRAM"
+			(at 53.34 821.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "LS R976-NR-1"
+			(at 53.34 921.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "4a96c615-19b1-4f68-95d2-db2570fb4b2a")
+		)
+		(pin "1"
+			(uuid "6c0055d7-5891-4db3-ac53-2b6da893fcc3")
+		)
+		(instances
+			(project "main_board"
+				(path "/5332464e-0c3a-49d2-8fb5-731d0e42ee15/2a4ecabb-e925-4920-b423-8767a20f726c"
+					(reference "LED2")
 					(unit 1)
 				)
 			)
@@ -6959,75 +7194,6 @@
 			(project "main_board"
 				(path "/5332464e-0c3a-49d2-8fb5-731d0e42ee15/2a4ecabb-e925-4920-b423-8767a20f726c"
 					(reference "#PWR04")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "ECE445L:LED")
-		(at 29.21 128.27 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "e02cb856-7948-45c1-bc9d-a6fc9e161ab0")
-		(property "Reference" "D1"
-			(at 16.764 128.524 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "RUN_LED"
-			(at 16.764 131.064 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "445L:LED_D5.0mm"
-			(at 29.21 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://users.ece.utexas.edu/~valvano/mspm0/HLMP-4700.pdf"
-			(at 29.21 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 29.21 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "aed48597-c1ad-45ec-b333-8535f5798be9")
-		)
-		(pin "2"
-			(uuid "994c47bf-a1c4-445b-9bd7-a2288530a528")
-		)
-		(instances
-			(project "main_board"
-				(path "/5332464e-0c3a-49d2-8fb5-731d0e42ee15/2a4ecabb-e925-4920-b423-8767a20f726c"
-					(reference "D1")
 					(unit 1)
 				)
 			)

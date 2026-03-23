@@ -4540,7 +4540,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SamacSys_Parts:NetTie-2_Pad0.3mm"
+		(property "Footprint" "NetTie:NetTie-3_SMD_Pad2.0mm"
 			(at 118.11 73.66 0)
 			(effects
 				(font
