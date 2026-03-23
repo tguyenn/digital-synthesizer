@@ -1,0 +1,63 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP NE555DR
+D Single Precision Timer
+K
+F http://www.ti.com/lit/ds/symlink/ne555.pdf
+$ENDCMP
+#
+$CMP MCP3204T-CI_ST
+D 12-bit resolution  +/- 1 LSB max DNL  +/- 1 LSB max INL (MCP3204/3208-B)  +/- 2 LSB max INL (MCP3204/3208-C)  4 (MCP3204) or 8 (MCP3208) input channels  Analog inputs programmable as single-ended or pseudo-differential pairs  On-chip sample and hold  SPI serial interface (modes 0,0 and 1,1)  Single supply operation: 2.7V - 5.5V  100 ksps max. sampling rate at VDD = 5V  50 ksps max. sampling rate at VDD = 2.7V  Low power CMOS technology: - 500 nA typical standby current, 2 A max. - 400 A
+K
+F 
+$ENDCMP
+#
+$CMP AH49HNTR-G1
+D Board Mount Hall Effect / Magnetic Sensors Linear Hall Sensor 3mA 3 to 8V
+K
+F https://www.diodes.com//assets/Datasheets/AH49H.pdf
+$ENDCMP
+#
+$CMP LM4041CILPR
+D Voltage References Adj Prec Micropwr Shunt Vltg Ref
+K
+F https://www.ti.com/general/docs/suppproductinfo.tsp?distId=26&gotoUrl=https://www.ti.com/lit/gpn/lm4041a12
+$ENDCMP
+#
+$CMP CD74HC4067SM96
+D High Speed CMOS 16-Ch MUX/DEMUX 24P SOIC CD74HC4067SM96, Multiplexer/Demultiplexer Single 16:1, 3 V, 5 V, 24-Pin, SSOP, 1
+K
+F https://datasheet.datasheetarchive.com/originals/distributors/SFDatasheet-6/sf-000127204.pdf
+$ENDCMP
+#
+$CMP ADC081S021CIMF_NOPB
+D Single Channel, 50 to 200 ksps, 8-Bit A/D Converter
+K
+F http://www.ti.com/lit/gpn/adc081s021
+$ENDCMP
+#
+$CMP ADC121S021CIMFX_NOPB
+D Single Channel, 50 to 200 ksps, 12-Bit A/D Converter
+K
+F http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fadc121s021
+$ENDCMP
+#
+$CMP UJC-H-G-SMT-1-P6-TR
+D Type C, Power Only, 5 Vdc, 5 A, Vertical, Surface Mount w/ Anchor Pins, SMT Contacts, Gold Flash, 6 Pins, USB Receptacle
+K
+F https://www.sameskydevices.com/product/interconnect/connectors/usb-connectors/ujc-h-g-smt-1-p6-tr?srsltid=AfmBOoq0MAximae-I4xzV8cRqJrN6l5eTM0me0MutqXnan0TguB6mMwJ
+$ENDCMP
+#
+$CMP SN74HC157NSR
+D Quadruple 2-Line To 1-Line Data Selectors/Multiplexers
+K
+F http://www.ti.com/lit/gpn/sn74hc157
+$ENDCMP
+#
+$CMP MCP3221A5T-E_OT
+D A/D Converter 12-Bit I2C 22ksps SOT23-5
+K
+F https://datasheet.datasheetarchive.com/originals/distributors/SFDatasheet-4/sf-00090069.pdf
+$ENDCMP
+#
+#End Doc Library
