@@ -2661,6 +2661,16 @@
 		)
 		(uuid "79f59981-30c3-422a-b75c-a680b729b72f")
 	)
+	(text "120 uA active"
+		(exclude_from_sim no)
+		(at 110.49 101.346 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "aad06a86-88a9-4653-8166-2c6748b73af2")
+	)
 	(text "38.4 mA worst case scenario"
 		(exclude_from_sim no)
 		(at 60.452 95.25 0)

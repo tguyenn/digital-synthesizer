@@ -78,4 +78,16 @@ K
 F http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Flm2937
 $ENDCMP
 #
+$CMP M0L1306QDGS32RQ1
+D ARM Microcontrollers - MCU Automotive 32-Mhz Ar m Cortex-M0+ with 64
+K
+F https://www.ti.com/lit/ds/symlink/mspm0l1306-q1.pdf?ts=1763609373324
+$ENDCMP
+#
+$CMP SN74AHCT125DBR
+D Quadruple Bus Buffer Gates With 3-State Outputs
+K
+F http://www.ti.com/lit/gpn/sn74ahct125
+$ENDCMP
+#
 #End Doc Library

@@ -5899,7 +5899,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "ECE445L:ti_LP_MSPM0G3507"
+		(property "Footprint" "445L:ti_LP_MSPM0G3507"
 			(at 0 1.27 0)
 			(effects
 				(font
@@ -5974,8 +5974,8 @@
 		)
 		(symbol "LP-MSPM0G3507_0_0"
 			(rectangle
-				(start -12.7 -35.56)
-				(end 12.7 33.02)
+				(start -12.7 33.02)
+				(end 12.7 -35.56)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -6292,7 +6292,7 @@
 					)
 				)
 			)
-			(pin power_out line
+			(pin passive line
 				(at -17.78 -33.02 0)
 				(length 5.08)
 				(name "GND"
@@ -6328,7 +6328,7 @@
 					)
 				)
 			)
-			(pin power_out line
+			(pin power_in line
 				(at 17.78 27.94 180)
 				(length 5.08)
 				(name "+VBUS"
@@ -6688,7 +6688,7 @@
 					)
 				)
 			)
-			(pin power_out line
+			(pin passive line
 				(at 17.78 -33.02 180)
 				(length 5.08)
 				(name "GND"
