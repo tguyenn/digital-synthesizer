@@ -1422,15 +1422,15 @@
 		)
 		(uuid "9e7e82ba-9072-495f-84c3-a2563c9106ca")
 	)
-	(text "Maybe 5mA"
+	(text "10 mA"
 		(exclude_from_sim no)
-		(at 20.066 86.106 0)
+		(at 17.78 85.598 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
-		(uuid "ae86eee6-e236-4d03-b28c-fc07454055ea")
+		(uuid "aeef5664-80f8-4324-b669-22df6c150ba8")
 	)
 	(text "Hierarchical Labels"
 		(exclude_from_sim no)
@@ -2554,7 +2554,7 @@
 		(at 31.75 99.06 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "939a582f-3084-4fc1-8d52-409d20524c32")

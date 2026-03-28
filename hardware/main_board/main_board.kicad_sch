@@ -242,16 +242,6 @@
 		)
 		(uuid "2ac3d707-212b-48b1-bc3d-e7620e220eaa")
 	)
-	(text "***quite a few passives are missing BOM data\n\ni am too tired and busy to do it right this minute"
-		(exclude_from_sim no)
-		(at 69.088 53.086 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "47c62219-7c36-4d68-bbf5-28b86a489025")
-	)
 	(wire
 		(pts
 			(xy 142.24 119.38) (xy 151.13 119.38)

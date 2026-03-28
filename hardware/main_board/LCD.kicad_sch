@@ -1107,6 +1107,16 @@
 		)
 		(uuid "32617ae2-e180-44e9-bf0b-541cab53dc69")
 	)
+	(text "50 mA"
+		(exclude_from_sim no)
+		(at 18.542 104.394 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "a173b043-89d1-4b50-9769-1948550d5857")
+	)
 	(text "Hierarchical Labels"
 		(exclude_from_sim no)
 		(at 25.4 15.24 0)
@@ -1788,7 +1798,7 @@
 		(at 30.48 127 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "a01db98d-a8ec-4fca-ba0c-428db2fc240e")

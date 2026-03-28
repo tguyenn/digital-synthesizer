@@ -21037,7 +21037,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2k0"
+		(property "Value" "2k"
 			(at 38.354 153.162 0)
 			(effects
 				(font
@@ -22183,7 +22183,7 @@
 		(at 30.48 38.1 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "22fe9cdd-0d4e-485b-89ad-a1e1fe2ed800")
@@ -22352,7 +22352,7 @@
 		(at 29.21 82.55 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "2b3e3e24-3579-49a9-8156-f6e175ef263b")
