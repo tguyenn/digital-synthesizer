@@ -90,4 +90,10 @@ K
 F http://www.ti.com/lit/gpn/sn74ahct125
 $ENDCMP
 #
+$CMP NX3020NAK-QR
+D 30 V, N-channel Trench MOSFET
+K
+F https://assets.nexperia.com/documents/data-sheet/NX3020NAK.pdf
+$ENDCMP
+#
 #End Doc Library
