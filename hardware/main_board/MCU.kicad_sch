@@ -4859,7 +4859,7 @@
 		(uuid "0dbd0af2-0e32-4da1-9d8d-462a3cbcb091")
 	)
 	(label "UART0_CHIP_RX"
-		(at 85.09 110.49 180)
+		(at 85.09 115.57 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5539,7 +5539,7 @@
 		(uuid "d4807b63-cc86-4267-85d5-5d94139bc5fe")
 	)
 	(label "UART0_CHIP_TX"
-		(at 85.09 115.57 180)
+		(at 85.09 110.49 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6126,7 +6126,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/ams-OSRAM/LS-R976-NR-1?qs=K5ta8V%252BWhtZhvCAe1sTZFg%3D%3D"
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/ams-OSRAM/LS-R976-NR-1?qs=K5ta8V%252BWhtZhvCAe1sTZFg%3D%3D"
 			(at 41.91 721.92 0)
 			(effects
 				(font
@@ -7154,7 +7154,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "PWR_LED"
+		(property "Value" "3V3_PWR"
 			(at 43.18 131.1274 0)
 			(effects
 				(font
@@ -7212,7 +7212,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/ams-OSRAM/LS-R976-NR-1?qs=K5ta8V%252BWhtZhvCAe1sTZFg%3D%3D"
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/ams-OSRAM/LS-R976-NR-1?qs=K5ta8V%252BWhtZhvCAe1sTZFg%3D%3D"
 			(at 53.34 721.92 0)
 			(effects
 				(font

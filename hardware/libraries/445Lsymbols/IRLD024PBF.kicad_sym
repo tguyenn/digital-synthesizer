@@ -21,7 +21,7 @@
     (property "Mouser Part Number" "844-IRLD024PBF" (at 21.59 -494.92 0)
       (effects (font (size 1.27 1.27)) (justify left top) hide)
     )
-    (property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Vishay-Siliconix/IRLD024PBF?qs=cvaI6ThkwxvrmVanJu5OcQ%3D%3D" (at 21.59 -594.92 0)
+    (property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/Vishay-Siliconix/IRLD024PBF?qs=cvaI6ThkwxvrmVanJu5OcQ%3D%3D" (at 21.59 -594.92 0)
       (effects (font (size 1.27 1.27)) (justify left top) hide)
     )
     (property "Manufacturer_Name" "Vishay" (at 21.59 -694.92 0)

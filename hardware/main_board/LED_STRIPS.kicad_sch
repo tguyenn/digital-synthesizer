@@ -676,7 +676,7 @@
 					(hide yes)
 				)
 			)
-			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/SN74LV1T34DBVR?qs=8sOby8ZxZLE4ekkxA3S6Wg%3D%3D"
+			(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/Texas-Instruments/SN74LV1T34DBVR?qs=8sOby8ZxZLE4ekkxA3S6Wg%3D%3D"
 				(at 21.59 -594.92 0)
 				(effects
 					(font
@@ -1733,7 +1733,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/SN74LV1T34DBVR?qs=8sOby8ZxZLE4ekkxA3S6Wg%3D%3D"
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/Texas-Instruments/SN74LV1T34DBVR?qs=8sOby8ZxZLE4ekkxA3S6Wg%3D%3D"
 			(at 59.69 634.29 0)
 			(effects
 				(font

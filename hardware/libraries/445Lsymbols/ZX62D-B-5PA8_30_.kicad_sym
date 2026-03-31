@@ -18,7 +18,7 @@
     (property "Mouser Part Number" "798-ZX62D-B-5PA830" (at 21.59 -494.92 0)
       (effects (font (size 1.27 1.27)) (justify left top) hide)
     )
-    (property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Hirose-Connector/ZX62D-B-5PA830?qs=1Nn7v2rJFSJs6IftS%252BmZAw%3D%3D" (at 21.59 -594.92 0)
+    (property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/Hirose-Connector/ZX62D-B-5PA830?qs=1Nn7v2rJFSJs6IftS%252BmZAw%3D%3D" (at 21.59 -594.92 0)
       (effects (font (size 1.27 1.27)) (justify left top) hide)
     )
     (property "Manufacturer_Name" "Hirose" (at 21.59 -694.92 0)

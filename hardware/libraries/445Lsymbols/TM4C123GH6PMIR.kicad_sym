@@ -18,7 +18,7 @@
     (property "Mouser Part Number" "595-TM4C123GH6PMIR" (at 49.53 -474.6 0)
       (effects (font (size 1.27 1.27)) (justify left top) hide)
     )
-    (property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TM4C123GH6PMIR?qs=9Y9qB%2FCsC3k3Wi%252BBS4c4WA%3D%3D" (at 49.53 -574.6 0)
+    (property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/Texas-Instruments/TM4C123GH6PMIR?qs=9Y9qB%2FCsC3k3Wi%252BBS4c4WA%3D%3D" (at 49.53 -574.6 0)
       (effects (font (size 1.27 1.27)) (justify left top) hide)
     )
     (property "Manufacturer_Name" "Texas Instruments" (at 49.53 -674.6 0)

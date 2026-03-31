@@ -18,7 +18,7 @@
     (property "Mouser Part Number" "926-LM2937ET-3.3NOPB" (at 21.59 -494.92 0)
       (effects (font (size 1.27 1.27)) (justify left top) hide)
     )
-    (property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/LM2937ET-3.3-NOPB?qs=X1J7HmVL2ZEMUke2IfNR4w%3D%3D" (at 21.59 -594.92 0)
+    (property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/Texas-Instruments/LM2937ET-3.3-NOPB?qs=X1J7HmVL2ZEMUke2IfNR4w%3D%3D" (at 21.59 -594.92 0)
       (effects (font (size 1.27 1.27)) (justify left top) hide)
     )
     (property "Manufacturer_Name" "Texas Instruments" (at 21.59 -694.92 0)

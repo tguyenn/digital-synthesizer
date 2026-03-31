@@ -73,7 +73,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/LM4890M-NOPB?qs=QbsRYf82W3H2uo8qVqZ%252BRw%3D%3D"
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/Texas-Instruments/LM4890M-NOPB?qs=QbsRYf82W3H2uo8qVqZ%252BRw%3D%3D"
 			(at 31.75 -594.92 0)
 			(effects
 				(font

@@ -18,7 +18,7 @@
     (property "Mouser Part Number" "815-ABM3-16-B2-T" (at 8.89 -496.19 0)
       (effects (font (size 1.27 1.27)) (justify left top) hide)
     )
-    (property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/ABRACON/ABM3-16.000MHZ-B2-T?qs=H8AWquzS%2FlOF%252BStKHcxcSw%3D%3D" (at 8.89 -596.19 0)
+    (property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/ABRACON/ABM3-16.000MHZ-B2-T?qs=H8AWquzS%2FlOF%252BStKHcxcSw%3D%3D" (at 8.89 -596.19 0)
       (effects (font (size 1.27 1.27)) (justify left top) hide)
     )
     (property "Manufacturer_Name" "ABRACON" (at 8.89 -696.19 0)

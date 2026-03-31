@@ -1289,7 +1289,7 @@
 					(hide yes)
 				)
 			)
-			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/LM2937ET-3.3-NOPB?qs=X1J7HmVL2ZEMUke2IfNR4w%3D%3D"
+			(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/Texas-Instruments/LM2937ET-3.3-NOPB?qs=X1J7HmVL2ZEMUke2IfNR4w%3D%3D"
 				(at 21.59 -594.36 0)
 				(effects
 					(font
@@ -1566,7 +1566,7 @@
 					(hide yes)
 				)
 			)
-			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/CD74HC4067SM96?qs=JHHQeKcAU3DyfvAOSRLjhQ%3D%3D"
+			(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/Texas-Instruments/CD74HC4067SM96?qs=JHHQeKcAU3DyfvAOSRLjhQ%3D%3D"
 				(at 41.91 -594.92 0)
 				(effects
 					(font
@@ -2114,7 +2114,7 @@
 					(hide yes)
 				)
 			)
-			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Microchip-Technology/MCP3221A5T-E-OT?qs=InakTnyiSK9lljladcdZHQ%3D%3D"
+			(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/Microchip-Technology/MCP3221A5T-E-OT?qs=InakTnyiSK9lljladcdZHQ%3D%3D"
 				(at 21.59 -594.92 0)
 				(effects
 					(font
@@ -21422,7 +21422,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 45.72 151.13 0)
 			(effects
 				(font
@@ -21743,7 +21743,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Microchip-Technology/MCP3221A5T-E-OT?qs=InakTnyiSK9lljladcdZHQ%3D%3D"
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/Microchip-Technology/MCP3221A5T-E-OT?qs=InakTnyiSK9lljladcdZHQ%3D%3D"
 			(at 146.05 655.88 0)
 			(effects
 				(font
@@ -22011,7 +22011,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/LM2937ET-3.3-NOPB?qs=X1J7HmVL2ZEMUke2IfNR4w%3D%3D"
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/Texas-Instruments/LM2937ET-3.3-NOPB?qs=X1J7HmVL2ZEMUke2IfNR4w%3D%3D"
 			(at 142.24 621.59 0)
 			(effects
 				(font
@@ -22218,7 +22218,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/CD74HC4067SM96?qs=JHHQeKcAU3DyfvAOSRLjhQ%3D%3D"
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/Texas-Instruments/CD74HC4067SM96?qs=JHHQeKcAU3DyfvAOSRLjhQ%3D%3D"
 			(at 246.38 620.32 0)
 			(effects
 				(font
@@ -22479,7 +22479,7 @@
 		(dnp no)
 		(uuid "218e6e31-40d4-4916-a4b8-3d70c0b0f014")
 		(property "Reference" "TP114"
-			(at 173.482 60.96 0)
+			(at 173.736 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22488,7 +22488,7 @@
 			)
 		)
 		(property "Value" "SCL"
-			(at 173.482 62.738 0)
+			(at 173.736 62.738 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23050,7 +23050,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 26.67 119.38 0)
 			(effects
 				(font
@@ -23128,7 +23128,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 26.67 124.46 0)
 			(effects
 				(font
@@ -23585,7 +23585,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/ams-OSRAM/LS-R976-NR-1?qs=K5ta8V%252BWhtZhvCAe1sTZFg%3D%3D"
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/ams-OSRAM/LS-R976-NR-1?qs=K5ta8V%252BWhtZhvCAe1sTZFg%3D%3D"
 			(at 756.21 113.03 0)
 			(effects
 				(font
@@ -24609,7 +24609,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 45.72 124.46 0)
 			(effects
 				(font
@@ -24934,7 +24934,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/ams-OSRAM/LS-R976-NR-1?qs=K5ta8V%252BWhtZhvCAe1sTZFg%3D%3D"
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/ams-OSRAM/LS-R976-NR-1?qs=K5ta8V%252BWhtZhvCAe1sTZFg%3D%3D"
 			(at 761.29 24.13 0)
 			(effects
 				(font
@@ -25006,7 +25006,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 45.72 119.38 0)
 			(effects
 				(font
@@ -25283,7 +25283,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/ams-OSRAM/LS-R976-NR-1?qs=K5ta8V%252BWhtZhvCAe1sTZFg%3D%3D"
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/ams-OSRAM/LS-R976-NR-1?qs=K5ta8V%252BWhtZhvCAe1sTZFg%3D%3D"
 			(at 695.25 111.76 0)
 			(effects
 				(font
@@ -25433,7 +25433,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 26.67 146.05 0)
 			(effects
 				(font
@@ -25625,7 +25625,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/ams-OSRAM/LS-R976-NR-1?qs=K5ta8V%252BWhtZhvCAe1sTZFg%3D%3D"
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/ams-OSRAM/LS-R976-NR-1?qs=K5ta8V%252BWhtZhvCAe1sTZFg%3D%3D"
 			(at 725.73 113.03 0)
 			(effects
 				(font
@@ -26503,7 +26503,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 26.67 151.13 0)
 			(effects
 				(font
@@ -26782,7 +26782,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/ams-OSRAM/LS-R976-NR-1?qs=K5ta8V%252BWhtZhvCAe1sTZFg%3D%3D"
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/ams-OSRAM/LS-R976-NR-1?qs=K5ta8V%252BWhtZhvCAe1sTZFg%3D%3D"
 			(at 666.04 111.76 0)
 			(effects
 				(font
@@ -27070,7 +27070,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "5k"
+		(property "Value" "470"
 			(at 169.164 31.496 0)
 			(effects
 				(font
@@ -27360,7 +27360,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 45.72 146.05 0)
 			(effects
 				(font
