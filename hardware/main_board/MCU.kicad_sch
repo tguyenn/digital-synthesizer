@@ -6593,7 +6593,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "PA9"
+		(property "Value" "LP.PA9"
 			(at 129.794 106.172 0)
 			(effects
 				(font
@@ -7087,7 +7087,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "PA8"
+		(property "Value" "LP.PA8"
 			(at 65.024 155.956 0)
 			(effects
 				(font

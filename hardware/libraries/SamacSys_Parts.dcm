@@ -96,4 +96,10 @@ K
 F https://assets.nexperia.com/documents/data-sheet/NX3020NAK.pdf
 $ENDCMP
 #
+$CMP SN74LV1T34DBVR
+D Single Power Supply BUFFER Logic Level Shifter (no enable)
+K
+F http://www.ti.com/lit/gpn/sn74lv1t34
+$ENDCMP
+#
 #End Doc Library

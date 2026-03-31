@@ -1328,16 +1328,6 @@
 		)
 		(uuid "47278420-7a8f-4612-ba8d-92c32284ddf9")
 	)
-	(text "TODO: figure out how much drive strength is required \nto actually function as select lines\n\nwhat is a bom consolidation"
-		(exclude_from_sim no)
-		(at 151.13 66.04 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "4754f5f0-65d3-4749-a1bb-a665bbc91442")
-	)
 	(text "260 uA each -> 260 x 4 = 1.04 mA"
 		(exclude_from_sim no)
 		(at 77.724 86.106 0)
@@ -1347,17 +1337,6 @@
 			)
 		)
 		(uuid "564ff3ae-366d-4b1a-b451-dfb4311dbf0e")
-	)
-	(text "will the LEDs' current draw prevent our selection lines\nfrom being able to interface with the muxes?"
-		(exclude_from_sim no)
-		(at 140.97 93.98 0)
-		(effects
-			(font
-				(size 4 4)
-				(color 255 13 0 1)
-			)
-		)
-		(uuid "5a3dc382-cccc-4eb2-93bc-81e7f7fbeee4")
 	)
 	(text "Peripheral PCBs will be daisy chained\nthrough protoboards"
 		(exclude_from_sim no)
@@ -2797,7 +2776,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "5k"
+		(property "Value" "470"
 			(at 111.76 64.7699 0)
 			(effects
 				(font
@@ -2933,7 +2912,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "5k"
+		(property "Value" "470"
 			(at 73.66 64.7699 0)
 			(effects
 				(font
@@ -3189,7 +3168,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "5k"
+		(property "Value" "470"
 			(at 86.36 64.7699 0)
 			(effects
 				(font
@@ -3259,7 +3238,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "5k"
+		(property "Value" "470"
 			(at 99.06 64.7699 0)
 			(effects
 				(font
