@@ -1,128 +1,50 @@
 // Lab7Main.c
 // Runs on MSPM0G3507
 // Lab 7 
-// Your name
 // Last Modified: January 12, 2026
 
 #include <stdio.h>
 #include <stdint.h>
 #include <ti/devices/msp/msp.h>
-#include "../inc/ST7735.h"
 #include "../inc/Clock.h"
 #include "../inc/LaunchPad.h"
-#include "../inc/Texas.h"
 #include "../inc/Timer.h"
 #include "../inc/ADC1.h"
 
-// ****note to ECE319K students****
-// the data sheet says the ADC does not work when clock is 80 MHz
-// however, the ADC seems to work on my boards at 80 MHz
-// I suggest you try 80MHz, but if it doesn't work, switch to 40MHz
-void PLL_Init(void){ // set phase lock loop (PLL)
+void PLL_Init(void) { // set phase lock loop (PLL)
   // Clock_Init40MHz(); // run this line for 40MHz
   Clock_Init80MHz(0);   // run this line for 80MHz
 }
 
+void TIMG7_IRQHandler() {
+  GPIOA->DOUTTGL = (1 << 16);
+  // GPIOA->DOUTTGL = (1 << 18);  
+}
 
-// // implement this function
-// void OutFix(uint32_t n){
-// // resolution is 0.001cm
-// // n is integer 0 to 2000
-// // output to ST7735 0.000cm to 2.000cm
-//  // write this
-// }
+void initLED(void){
 
-// // do not use this function for your final lab solution
-// // it is added just to show you how SLOW floating point is on a Cortex M0+
-// void FloatOutFix(float x){
-// // resolution cm
-// // x is integer 0 to 2.000
-// // output to ST7735 0.000cm to 2.000cm
-//   printf("d=%f cm   ",x);  // floating point output
-// }
+  // PA16, LP
+  IOMUX->SECCFG.PINCM[PA16INDEX] = 0x00000081; // regular output
+  GPIOB->DOE31_0 |= 0x10000;
+  // PA18, CHIP
+  // IOMUX->SECCFG.PINCM[PA18INDEX] = 0x00000081; // regular output
+  // GPIOB->DOE31_0 |= 0x40000;
 
-// uint32_t Data;        // 12-bit ADC
-// uint32_t Position;    // 32-bit fixed-point 0.001 cm
-// float FloatPosition;  // 32-bit floating-point cm
-//  // define a semaphore
-// uint32_t startTime,stopTime;
-// uint32_t Offset,ADCtime,Converttime,FloatConverttime,OutFixtime,FloatOutFixtime; // in bus cycles
-// uint32_t Time;
-// // use main1 if you do not have a voltmeter
-// // use main1 to test slidepot interface
-// // connect slidepot pin 2 to ADC1 channel 5, PB18
-// // Open TExaSdisplay and see slidepot pin2 go from 0 to 3.3V
+  TimerG7_IntArm(UINT16_MAX, 0, 0);
+}
+
+
+
 int main(void){ // main1
   __disable_irq();
   PLL_Init(); // set bus speed
   LaunchPad_Init();
-  TExaS_Init(ADC1,5,0); //ADC1 channel 5, PB18, slidepot
-  ST7735_InitR(INITR_REDTAB);
+  initLED();
   __enable_irq();
   while(1){
-    ST7735_FillScreen(ST7735_BLACK);
+    
   }
 }
-// // if you have a voltmeter/scope,
-// // use the voltmeter/scope see slidepot pin2 go from 0 to 3.3V
-
-// // use main2 to test ADCinit and ADCin functions
-// // connect slidepot pin 2 to PB18 ADC1
-// // Data should go from 0 to 4095
-// // ADCtime is the time to execute ADCin in bus cycles
-// // use main2 to calibrate the system fill in 5 points in Calibration.xls
-// //    determine constants k1 k2 to fit Position=(k1*Data)>>12 + k2
-// int main2(void){ // main2
-//   __disable_irq();
-//   PLL_Init(); // set bus speed
-//   LaunchPad_Init();
-//   SysTick->LOAD = 0xFFFFFF;    // max
-//   SysTick->VAL = 0;            // any write to current clears it
-//   SysTick->CTRL = 0x00000005;  // enable SysTick with core clock
-//   startTime = SysTick->VAL;
-//   stopTime = SysTick->VAL;
-//   Offset = (startTime-stopTime)&0x0FFFFFF; // in bus cycles to perform time measurement
-//   ADCinit(); //ADC1 channel 5, PB18, slidepot
-//   while(1){
-//     startTime = SysTick->VAL;
-//     Data = ADCin();  // sample ADC1 channel 5, PB18, slidepot
-//     stopTime = SysTick->VAL;
-//     ADCtime = ((startTime-stopTime)&0x0FFFFFF)-Offset; // in bus cycles
-//   }
-// }
-
-// // use main3 to test Convert functions
-// // connect slidepot pin 2 to PB18
-// // Data should go from 0 to 4095
-// // Position should go from 0 to 2000
-// // Use main3 to take another 5 measurements to determine accuracy
-// // truth is your eyes and the cursor on your slide pot
-// // measurement is the Position variable
-// // Converttime is the time to execute Convert in bus cycles
-// int main3(void){ // main3
-//   __disable_irq();
-//   PLL_Init(); // set bus speed
-//   LaunchPad_Init();
-//   SysTick->LOAD = 0xFFFFFF;    // max
-//   SysTick->VAL = 0;            // any write to current clears it
-//   SysTick->CTRL = 0x00000005;  // enable SysTick with core clock
-//   startTime = SysTick->VAL;
-//   stopTime = SysTick->VAL;
-//   Offset = (startTime-stopTime)&0x0FFFFFF; // in bus cycles to perform time measurement
-//   ADCinit(); //PB18 = ADC0 channel 5, slidepot
-//   while(1){
-//     Data = ADCin();  // sample 12-bit ADC0 channel 5, slidepot
-//     startTime = SysTick->VAL;
-//     Position = Convert(Data);
-//     stopTime = SysTick->VAL;
-//     Converttime = ((startTime-stopTime)&0x0FFFFFF)-Offset; // in bus cycles
-//     startTime = SysTick->VAL;
-//     FloatPosition = FloatConvert(Data);
-//     stopTime = SysTick->VAL;
-//     FloatConverttime = ((startTime-stopTime)&0x0FFFFFF)-Offset; // in bus cycles
-//   }
-// }
-
 
 // // use main4 to test OutFix functions
 // // connect slidepot pin 2 to PB18
