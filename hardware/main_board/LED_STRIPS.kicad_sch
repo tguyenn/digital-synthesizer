@@ -1841,6 +1841,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/Samsung-Electro-Mechanics/CL21A106KPFNNNE?qs=sGAEpiMZZMt7gvpyg0xT8jBAVP%252BdkPhuUJvUBe19zr8%3D"
+			(at 69.85 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "2ece4e08-0ea5-4d1b-ac4d-010fc4e57e31")
 		)
@@ -2011,7 +2020,7 @@
 		(at 36.83 105.41 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board no)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -2327,6 +2336,15 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 52.07 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/Walsin/MG21B104K500CT?qs=sGAEpiMZZMt7gvpyg0xT8jBHDtGZvLzXjlSfFWC8Jgc2tQbZi0zprA%3D%3D"
+			(at 52.07 53.34 90)
 			(effects
 				(font
 					(size 1.27 1.27)

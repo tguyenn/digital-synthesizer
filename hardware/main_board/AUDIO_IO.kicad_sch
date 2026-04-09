@@ -2120,6 +2120,16 @@
 		)
 		(uuid "30a1c24a-a89a-4e6c-a890-e33effba5319")
 	)
+	(text "R2"
+		(exclude_from_sim no)
+		(at 91.948 127 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "351f8d2a-7744-4b76-ad79-fa43872ebe0d")
+	)
 	(text "Speaker Preamp"
 		(exclude_from_sim no)
 		(at 22.606 39.37 0)
@@ -2139,6 +2149,16 @@
 			)
 		)
 		(uuid "3b77fa04-96f4-4f42-9a1a-5bc4abfa0d14")
+	)
+	(text "V_{OUT} = V_{IN} * (1 + (R1/R2))\n-> 1.5 gain"
+		(exclude_from_sim no)
+		(at 117.602 131.572 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "50bca5dc-3d2d-40d7-b624-864b0fe8d305")
 	)
 	(text "R_{f}"
 		(exclude_from_sim no)
@@ -2190,6 +2210,16 @@
 		)
 		(uuid "9e7e82ba-9072-495f-84c3-a2563c9106ca")
 	)
+	(text "tbh idk if this circuit is safe lol"
+		(exclude_from_sim no)
+		(at 110.236 50.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "9fde19ee-4ba6-429d-97b0-cf07bf4c37de")
+	)
 	(text "10 mA"
 		(exclude_from_sim no)
 		(at 17.78 85.598 0)
@@ -2209,6 +2239,16 @@
 			)
 		)
 		(uuid "bb02ee3a-a4e0-49f5-a260-47ac368ec644")
+	)
+	(text "R1"
+		(exclude_from_sim no)
+		(at 81.28 125.984 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "efa48d42-a65f-42f1-8c2c-87cbe5106677")
 	)
 	(text "Fuck Shit"
 		(exclude_from_sim no)
@@ -3108,6 +3148,16 @@
 		)
 		(uuid "373610e1-17b5-4a21-82d4-6e4d2cc862e3")
 	)
+	(label "R_{IN}R_{F}"
+		(at 54.61 82.55 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "377d7710-a6c0-4ece-8b47-e95dbf30b922")
+	)
 	(label "S"
 		(at 130.81 123.19 0)
 		(effects
@@ -3559,7 +3609,7 @@
 		(dnp no)
 		(uuid "2bfcc077-c9d6-425d-b2be-3413b479fb6e")
 		(property "Reference" "R506"
-			(at 95.504 132.08 90)
+			(at 94.996 131.318 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3567,8 +3617,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "???"
-			(at 95.504 134.62 90)
+		(property "Value" "20k"
+			(at 94.996 133.858 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3596,6 +3646,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 91.44 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/YAGEO/RC0805FR-1020KL?qs=sGAEpiMZZMvdGkrng054t7z4BkURc4LzyQBLWrMO%252BznK%2FJbWTd%2FqOQ%3D%3D"
+			(at 91.44 129.54 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3746,6 +3805,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/Murata-Electronics/GRM033R60J334ME90D?qs=sGAEpiMZZMt7gvpyg0xT8uCCXHbS75E5ohl%252B6aFMib58IUjO%2FZu9jw%3D%3D"
+			(at 36.83 62.23 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "4a288ce7-3f43-4524-8101-4a91f9c0e387")
 		)
@@ -3880,6 +3948,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 45.72 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/Samsung-Electro-Mechanics/CL21B105KPFNNNE?qs=349EhDEZ59rb3V94UrmRdQ%3D%3D"
 			(at 45.72 72.39 0)
 			(effects
 				(font
@@ -4195,7 +4272,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "???"
+		(property "Value" "47k"
 			(at 113.03 113.0299 0)
 			(effects
 				(font
@@ -4223,6 +4300,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 110.49 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/YAGEO/RC0805JR-7W47KL?qs=tggtontpCXNoMeTIW8%252BKHA%3D%3D"
 			(at 110.49 111.76 0)
 			(effects
 				(font
@@ -4404,7 +4490,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "???"
+		(property "Value" "10k"
 			(at 71.374 128.524 0)
 			(effects
 				(font
@@ -4432,6 +4518,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 78.74 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/YAGEO/RV0805JR-0710KL?qs=qpJ%252B%252B%252Bdg6p3bGiIDT3p%252B0w%3D%3D"
 			(at 78.74 125.73 0)
 			(effects
 				(font
@@ -4508,6 +4603,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/YAGEO/RC0805FR-1020KL?qs=sGAEpiMZZMvdGkrng054t7z4BkURc4LzyQBLWrMO%252BznK%2FJbWTd%2FqOQ%3D%3D"
+			(at 73.66 82.55 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "4ce7d19e-3406-4278-90f6-2be05017c7d2")
 		)
@@ -4528,7 +4632,7 @@
 		(at 148.59 67.31 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "742907ab-e68c-4228-a7ae-e76bcf9038d5")
@@ -4749,7 +4853,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "???"
+		(property "Value" "10n"
 			(at 72.39 110.4899 0)
 			(effects
 				(font
@@ -4777,6 +4881,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 68.58 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/Samsung-Electro-Mechanics/CL21A106KPFNNNE?qs=sGAEpiMZZMt7gvpyg0xT8jBAVP%252BdkPhuUJvUBe19zr8%3D"
 			(at 68.58 109.22 0)
 			(effects
 				(font
@@ -4845,6 +4958,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 50.8 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/YAGEO/RC0805FR-1020KL?qs=sGAEpiMZZMvdGkrng054t7z4BkURc4LzyQBLWrMO%252BznK%2FJbWTd%2FqOQ%3D%3D"
+			(at 50.8 62.23 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5363,7 +5485,7 @@
 				)
 			)
 		)
-		(property "Value" "???"
+		(property "Value" "3u3"
 			(at 106.68 62.23 90)
 			(effects
 				(font
@@ -5391,6 +5513,24 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 106.68 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Stock/Price" "https://www.mouser.com/ProductDetail/TDK/C2012X7R1V335K125AC?qs=U4gclJHtfSj5XsYUBUaOrg%3D%3D"
+			(at 106.68 67.31 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/TDK/C2012X7R1V335K125AC?qs=U4gclJHtfSj5XsYUBUaOrg%3D%3D"
+			(at 106.68 67.31 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5457,6 +5597,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 81.28 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/Samsung-Electro-Mechanics/CL21B105KPFNNNE?qs=349EhDEZ59rb3V94UrmRdQ%3D%3D"
 			(at 81.28 97.79 0)
 			(effects
 				(font
@@ -5590,6 +5739,15 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 78.74 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/Samsung-Electro-Mechanics/CL21B105KPFNNNE?qs=349EhDEZ59rb3V94UrmRdQ%3D%3D"
+			(at 78.74 50.8 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5976,7 +6134,7 @@
 				)
 			)
 		)
-		(property "Value" "???"
+		(property "Value" "3u3"
 			(at 102.87 114.3 90)
 			(effects
 				(font
@@ -6004,6 +6162,24 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 102.87 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Stock/Price" "https://www.mouser.com/ProductDetail/TDK/C2012X7R1V335K125AC?qs=U4gclJHtfSj5XsYUBUaOrg%3D%3D"
+			(at 102.87 107.95 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/TDK/C2012X7R1V335K125AC?qs=U4gclJHtfSj5XsYUBUaOrg%3D%3D"
+			(at 102.87 107.95 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6175,7 +6351,7 @@
 				)
 			)
 		)
-		(property "Value" "???"
+		(property "Value" "787"
 			(at 64.77 101.6 90)
 			(effects
 				(font
@@ -6203,6 +6379,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 64.77 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/Vishay/CRCW0805787RFKEA?qs=Lu3mkJd%252BoBHFo%2FQlWc6ASQ%3D%3D"
+			(at 64.77 105.41 90)
 			(effects
 				(font
 					(size 1.27 1.27)

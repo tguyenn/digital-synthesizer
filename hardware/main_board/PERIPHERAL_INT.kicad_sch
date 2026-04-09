@@ -1328,6 +1328,16 @@
 		)
 		(uuid "47278420-7a8f-4612-ba8d-92c32284ddf9")
 	)
+	(text "GRN"
+		(exclude_from_sim no)
+		(at 88.646 76.962 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "54aab633-abbe-4c04-a865-f9f8e16f5c98")
+	)
 	(text "260 uA each -> 260 x 4 = 1.04 mA"
 		(exclude_from_sim no)
 		(at 77.724 86.106 0)
@@ -1337,6 +1347,26 @@
 			)
 		)
 		(uuid "564ff3ae-366d-4b1a-b451-dfb4311dbf0e")
+	)
+	(text "GRN"
+		(exclude_from_sim no)
+		(at 75.946 76.962 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "5b849d91-166d-4372-9720-6a48bb7d99f1")
+	)
+	(text "GRN"
+		(exclude_from_sim no)
+		(at 113.792 76.962 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "7105d064-0b7d-4245-9f7b-e0589a4157f8")
 	)
 	(text "Peripheral PCBs will be daisy chained\nthrough protoboards"
 		(exclude_from_sim no)
@@ -1367,6 +1397,16 @@
 			)
 		)
 		(uuid "cc43874a-0367-4259-a9b6-02d989e65285")
+	)
+	(text "GRN"
+		(exclude_from_sim no)
+		(at 101.092 76.962 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "cd22d338-7862-4329-929b-7b33c14dd0d2")
 	)
 	(text "I2C Logic Analyzer Breakout"
 		(exclude_from_sim no)
@@ -2366,7 +2406,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://datasheet.datasheetarchive.com/originals/distributors/DKDS-18/344792.pdf"
+		(property "Datasheet" ""
 			(at 97.79 266.04 0)
 			(effects
 				(font
@@ -2405,7 +2445,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/ams-OSRAM/LS-R976-NR-1?qs=K5ta8V%252BWhtZhvCAe1sTZFg%3D%3D"
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/LITEON/LTST-C170GKT?qs=sGAEpiMZZMv0DJfhVcWlK%252BdbpgZMtcHOLj2jKamJQec%3D"
 			(at 97.79 666.04 0)
 			(effects
 				(font
@@ -2552,7 +2592,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://datasheet.datasheetarchive.com/originals/distributors/DKDS-18/344792.pdf"
+		(property "Datasheet" ""
 			(at 110.49 266.04 0)
 			(effects
 				(font
@@ -2591,7 +2631,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/ams-OSRAM/LS-R976-NR-1?qs=K5ta8V%252BWhtZhvCAe1sTZFg%3D%3D"
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/LITEON/LTST-C170GKT?qs=sGAEpiMZZMv0DJfhVcWlK%252BdbpgZMtcHOLj2jKamJQec%3D"
 			(at 110.49 666.04 0)
 			(effects
 				(font
@@ -2673,7 +2713,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://datasheet.datasheetarchive.com/originals/distributors/DKDS-18/344792.pdf"
+		(property "Datasheet" ""
 			(at 85.09 266.04 0)
 			(effects
 				(font
@@ -2712,7 +2752,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/ams-OSRAM/LS-R976-NR-1?qs=K5ta8V%252BWhtZhvCAe1sTZFg%3D%3D"
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/LITEON/LTST-C170GKT?qs=sGAEpiMZZMv0DJfhVcWlK%252BdbpgZMtcHOLj2jKamJQec%3D"
 			(at 85.09 666.04 0)
 			(effects
 				(font
@@ -2804,6 +2844,15 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
+			(at 109.22 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/YAGEO/AF0805JR-07470RL?qs=tggtontpCXOaQg0VhtuXeg%3D%3D"
 			(at 109.22 63.5 0)
 			(effects
 				(font
@@ -2948,6 +2997,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/YAGEO/AF0805JR-07470RL?qs=tggtontpCXOaQg0VhtuXeg%3D%3D"
+			(at 71.12 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "51769ce5-455b-4e34-aff5-754cea363db7")
 		)
@@ -3065,7 +3123,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://datasheet.datasheetarchive.com/originals/distributors/DKDS-18/344792.pdf"
+		(property "Datasheet" ""
 			(at 123.19 266.04 0)
 			(effects
 				(font
@@ -3104,7 +3162,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/ams-OSRAM/LS-R976-NR-1?qs=K5ta8V%252BWhtZhvCAe1sTZFg%3D%3D"
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/LITEON/LTST-C170GKT?qs=sGAEpiMZZMv0DJfhVcWlK%252BdbpgZMtcHOLj2jKamJQec%3D"
 			(at 123.19 666.04 0)
 			(effects
 				(font
@@ -3204,6 +3262,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/YAGEO/AF0805JR-07470RL?qs=tggtontpCXOaQg0VhtuXeg%3D%3D"
+			(at 83.82 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "d35fe1e6-2a72-42bd-8e85-a041189695aa")
 		)
@@ -3266,6 +3333,15 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
+			(at 96.52 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/YAGEO/AF0805JR-07470RL?qs=tggtontpCXOaQg0VhtuXeg%3D%3D"
 			(at 96.52 63.5 0)
 			(effects
 				(font

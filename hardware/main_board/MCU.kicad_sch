@@ -3471,6 +3471,16 @@
 		)
 		(uuid "0834054d-709b-4877-bb07-44082701b986")
 	)
+	(text "GRN"
+		(exclude_from_sim no)
+		(at 46.736 133.604 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "15686852-ffe4-4f89-9921-4ac9dae5b7aa")
+	)
 	(text "LEDs"
 		(exclude_from_sim no)
 		(at 16.764 110.998 0)
@@ -3550,6 +3560,16 @@
 			)
 		)
 		(uuid "685a1c03-98c4-4ffb-b60f-e7edc1833f12")
+	)
+	(text "BLU"
+		(exclude_from_sim no)
+		(at 21.59 132.842 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "73b1f49d-2f3b-482b-89db-24345960f90c")
 	)
 	(text "SPI0_CS0"
 		(exclude_from_sim no)
@@ -5835,6 +5855,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/YAGEO/AF0805JR-07470RL?qs=tggtontpCXOaQg0VhtuXeg%3D%3D"
+			(at 39.37 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "5e0293f6-ed25-4b63-8de6-c95aad4ceb66")
 		)
@@ -5985,7 +6014,7 @@
 		(at 71.12 67.31 90)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -6087,7 +6116,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://datasheet.datasheetarchive.com/originals/distributors/DKDS-18/344792.pdf"
+		(property "Datasheet" ""
 			(at 41.91 321.92 0)
 			(effects
 				(font
@@ -6126,7 +6155,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/ams-OSRAM/LS-R976-NR-1?qs=K5ta8V%252BWhtZhvCAe1sTZFg%3D%3D"
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/LITEON/LTST-C171TBKT?qs=sGAEpiMZZMv0DJfhVcWlK%252BdbpgZMtcHOavAEZj1Si14%3D"
 			(at 41.91 721.92 0)
 			(effects
 				(font
@@ -6225,6 +6254,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/Walsin/MG21B104K500CT?qs=sGAEpiMZZMt7gvpyg0xT8jBHDtGZvLzXjlSfFWC8Jgc2tQbZi0zprA%3D%3D"
+			(at 102.87 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "3c8594a4-32dc-4ba7-aab6-3dab57e4de64")
 		)
@@ -6286,6 +6324,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 81.28 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/KEMET/C0805C103K1RAC7411?qs=jbRM9o5BbzN%252BKAvowF%2FE%2Fw%3D%3D"
 			(at 81.28 67.31 0)
 			(effects
 				(font
@@ -6487,6 +6534,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 123.19 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/Samsung-Electro-Mechanics/CL10B474KO8NFNC?qs=sGAEpiMZZMt7gvpyg0xT8q%2F7CsY61%2FyFTHCmY5wjL0L9D1tlR%2FUXtQ%3D%3D"
 			(at 123.19 20.32 0)
 			(effects
 				(font
@@ -7054,6 +7110,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/Samsung-Electro-Mechanics/CL21A106KPFNNNE?qs=sGAEpiMZZMt7gvpyg0xT8jBAVP%252BdkPhuUJvUBe19zr8%3D"
+			(at 92.71 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "aa193d40-3e81-4c08-880e-e827396209cf")
 		)
@@ -7173,7 +7238,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://datasheet.datasheetarchive.com/originals/distributors/DKDS-18/344792.pdf"
+		(property "Datasheet" ""
 			(at 53.34 321.92 0)
 			(effects
 				(font
@@ -7212,7 +7277,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/ams-OSRAM/LS-R976-NR-1?qs=K5ta8V%252BWhtZhvCAe1sTZFg%3D%3D"
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/LITEON/LTST-C170GKT?qs=sGAEpiMZZMv0DJfhVcWlK%252BdbpgZMtcHOLj2jKamJQec%3D"
 			(at 53.34 721.92 0)
 			(effects
 				(font
@@ -7640,6 +7705,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/YAGEO/RC0805JR-7W47KL?qs=tggtontpCXNoMeTIW8%252BKHA%3D%3D"
+			(at 81.28 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "4ca981fe-0ab3-448e-8ed1-e39fb8de113a")
 		)
@@ -7702,6 +7776,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 213.36 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/Samsung-Electro-Mechanics/CL21B105KPFNNNE?qs=349EhDEZ59rb3V94UrmRdQ%3D%3D"
 			(at 213.36 48.26 0)
 			(effects
 				(font
@@ -7836,6 +7919,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 109.22 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/YAGEO/RV0805JR-0710KL?qs=qpJ%252B%252B%252Bdg6p3bGiIDT3p%252B0w%3D%3D"
 			(at 109.22 35.56 0)
 			(effects
 				(font
@@ -8060,6 +8152,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/YAGEO/RV0805JR-0710KL?qs=qpJ%252B%252B%252Bdg6p3bGiIDT3p%252B0w%3D%3D"
+			(at 119.38 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "4c78c110-4557-42ac-8425-0ad68be19638")
 		)
@@ -8080,7 +8181,7 @@
 		(at 102.87 129.54 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -8418,6 +8519,15 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
+			(at 27.94 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/YAGEO/AF0805JR-07470RL?qs=tggtontpCXOaQg0VhtuXeg%3D%3D"
 			(at 27.94 119.38 0)
 			(effects
 				(font
