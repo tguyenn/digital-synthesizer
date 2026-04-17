@@ -33,6 +33,9 @@
 #define __CLOCK_H__
 #include <stdint.h>
 
+// rocco function
+void Clock_Init80MHz_Internal(void);
+
 /**
  * Configure the MSPM0 clock to run at 80 MHz. In ECE319K we will not enable clock output onPA14.
  * @param enablePA14 1 means clock output on PA14, 0 means no output on PA14

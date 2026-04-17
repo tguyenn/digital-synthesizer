@@ -306,4 +306,61 @@ void TimerG8_Init(uint32_t divider, uint32_t prescale){
   TIMG8->COUNTERREGS.CTRCTL |= 0x01;
 }
 
-
+void Clock_Init80MHz_Internal(void){
+  // 1) Ensure SYSOSC is 32 MHz (internal oscillator)
+  SYSCTL->SOCLOCK.SYSOSCCFG =
+  (SYSCTL->SOCLOCK.SYSOSCCFG & (~0x03)) | 0x00;
+  // Make sure SYSOSC is enabled
+  SYSCTL->SOCLOCK.SYSOSCCFG &= ~0x00000400;
+  // 2) Make sure PLL is off before configuring
+  while ((SYSCTL->SOCLOCK.CLKSTATUS & 0x4000) != 0x4000){
+  ; // wait until PLL is disabled
+  }
+  // 3) Set PLL reference = SYSOSC (internal)
+  SYSCTL->SOCLOCK.SYSPLLCFG0 &= ~0x01;
+  // 4) Divide reference by 2 -> 16 MHz into PLL
+  SYSCTL->SOCLOCK.SYSPLLCFG1 =
+  (SYSCTL->SOCLOCK.SYSPLLCFG1 & (~0x03)) | 0x01;
+  // 5) Load default PLL calibration params (still usable)
+  SYSCTL->SOCLOCK.SYSPLLPARAM0 =
+  *(volatile uint32_t *)(0x41C4002C);
+  SYSCTL->SOCLOCK.SYSPLLPARAM1 =
+  *(volatile uint32_t *)(0x41C40030);
+  // 6) Set PLL multiplier (same as original -> ~80 MHz)
+  SYSCTL->SOCLOCK.SYSPLLCFG1 =
+  (SYSCTL->SOCLOCK.SYSPLLCFG1 & (~0x7F00)) | 0x0900;
+  // 7) Configure PLL outputs
+  SYSCTL->SOCLOCK.SYSPLLCFG0 = 0x00031062;
+  // 8) Enable PLL
+  SYSCTL->SOCLOCK.HSCLKEN |= 0x00000100;
+  // 9) Wait for PLL lock
+  while((SYSCTL->SOCLOCK.CLKSTATUS & 0x00000200) == 0){
+  ; // wait for PLL ready
+  }
+  // 10) Route PLL → HSCLK
+  SYSCTL->SOCLOCK.HSCLKCFG = 0;
+  while ((SYSCTL->SOCLOCK.CLKSTATUS & 0x00200000) == 0){
+  ; // wait HSCLK valid
+  }
+  // 11) Switch MCLK -> HSCLK
+  SYSCTL->SOCLOCK.MCLKCFG |= 0x00010000;
+  while ((SYSCTL->SOCLOCK.CLKSTATUS & 0x00000010) == 0){
+  ; // wait MCLK switched
+  }
+  // 12) Set dividers
+  SYSCTL->SOCLOCK.MCLKCFG =
+  (SYSCTL->SOCLOCK.MCLKCFG & (~0x000F)); // /1
+  SYSCTL->SOCLOCK.MCLKCFG =
+  (SYSCTL->SOCLOCK.MCLKCFG & (~0x0030)) | 0x10; // ULPCLK /2
+  SYSCTL->SOCLOCK.MCLKCFG =
+  (SYSCTL->SOCLOCK.MCLKCFG & (~0x0F00)) | 0x0200; // flash wait states
+  // 14) Final stabilization check
+  while ((SYSCTL->SOCLOCK.CLKSTATUS & 0x00200A00) != 0x00200A00){
+  ;
+  }
+  // 15) Power + sleep config
+  SYSCTL->SOCLOCK.BORTHRESHOLD = 0;
+  SCB->SCR &= ~(0x04);
+  SCB->SCR &= ~(0x02);
+  BusFreq = 80000000;
+}
