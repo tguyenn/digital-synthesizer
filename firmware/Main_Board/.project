@@ -46,6 +46,11 @@
 			<locationURI>PARENT-1-PROJECT_LOC/inc/LaunchPad.c</locationURI>
 		</link>
 		<link>
+			<name>PWM.c</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/inc/PWM.c</locationURI>
+		</link>
+		<link>
 			<name>SPI.c</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/inc/SPI.c</locationURI>
@@ -74,6 +79,11 @@
 			<name>UARTbusywait.c</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/inc/UARTbusywait.c</locationURI>
+		</link>
+		<link>
+			<name>ledStrip.c</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/lib/ledStrip.c</locationURI>
 		</link>
 		<link>
 			<name>myUART.c</name>

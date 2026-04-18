@@ -5,12 +5,20 @@
 #define NUM_KEYS 60
 
 void initUART() {
-    UART_Init(); // chip -> LP comms
-    UART1_Init(); // to laptop via USB to UART bridge
+    UART_Init(); // UART0: chip -> LP comms
+    UART1_Init(); // UART1: to laptop via USB to UART bridge
 }
 
-void testUART0() {
+void testUART1() {
     UART1_OutChar('L');
+    UART1_OutChar('b');
+    UART1_OutChar('o');
+    UART1_OutChar('z');
+    UART1_OutChar('o');
+}
+
+void testUART1() {
+    UART_OutChar('L');
     UART1_OutChar('b');
     UART1_OutChar('o');
     UART1_OutChar('z');
@@ -19,15 +27,40 @@ void testUART0() {
 
 void pushVelData() {
     for(int i = 0; i < NUM_KEYS; i++) {
-        // UART_OutChar(velData[i]);
+        UART_OutChar(velData[i]);
     }
 }
 
-// sample 2 sets of key data
-    // keypos1, keypos2 uint16_t arrs of len 60
-    // keyval res array of len 60
+int16_t keyVel[NUM_KEYS]; 
+void calcVel() {
+    for(int i = 0; i < NUM_KEYS) {
+        keyVel[i] = (oldPos[i] - newPos[i]);
+        // if we assume a constant sampling rate of each hall sensor, then we do not need to divide by time. 
+        // we can use the raw magnitude and direction of keyVel[i] to determine how to play sound 
+        // maybe slave chip can use history of keyVel ?
+
+        // we should prob do some sort of filtering tbh, but we might need to collect more position data
+    }
+}
+
+// todo move this to main?
+int16_t newPos[NUM_KEYS];
+int16_t oldPos[NUM_KEYS];
+
+void readADCData() {
+    for(int i = 0; i < NUM_KEYS; i++) {
+        oldPos[i] = newPos[i]; // is there a better way to implement w/o so many memory accesses?
+        newPos[i] = readADC();
+    }
+}
+
+// main loop / ISR(?) logic
+while(ADCCount < 60) {
+    readADCData();
+    ADCCount++;
+}
+calcVel();
+pushVelData();
+ADCCount = 0;
 
 // filtering???
-
-// calcSpeed
-    // keyvel[i] = (keypos1[i] - keypos2[i]) / SAMPLE_INTERVAL;
