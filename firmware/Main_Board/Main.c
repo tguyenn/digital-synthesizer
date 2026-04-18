@@ -1,7 +1,6 @@
 // Main.c
 #include <stdio.h>
 #include <stdint.h>
-#include <ti/devices/msp/msp.h>
 
 #include "../inc/Clock.h"
 #include "../inc/LaunchPad.h"
@@ -13,7 +12,9 @@
 #include "../inc/DAC.h"
 
 // Include your new abstraction layer
-#include "../inc/BoardConfig.h"
+#include "BoardConfig.h"
+#include "../inc/ti_msp_dl_config.h"
+
 
 const uint16_t Wave16[16] = {
   2048, 2441, 2772, 3004, 3072, 3004, 2772, 2441, 
