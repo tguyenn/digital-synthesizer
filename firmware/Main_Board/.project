@@ -41,6 +41,16 @@
 			<locationURI>PARENT-1-PROJECT_LOC/inc/DAC.c</locationURI>
 		</link>
 		<link>
+			<name>I2C.c</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/inc/I2C.c</locationURI>
+		</link>
+		<link>
+			<name>I2CADC.c</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/lib/I2CADC.c</locationURI>
+		</link>
+		<link>
 			<name>LaunchPad.c</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/inc/LaunchPad.c</locationURI>
@@ -74,6 +84,11 @@
 			<name>UARTbusywait.c</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/inc/UARTbusywait.c</locationURI>
+		</link>
+		<link>
+			<name>encoder.c</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/lib/encoder.c</locationURI>
 		</link>
 		<link>
 			<name>myUART.c</name>

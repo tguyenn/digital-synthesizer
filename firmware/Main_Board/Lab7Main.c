@@ -56,46 +56,10 @@ void initHeart(void){
   GPIOA->DOE31_0 |= (1 << 22);
 }
 
-void initMux(void) {
-  // LP PB24, PB20, PB4, PB3 -> S0, S1, S2, S3
-  // GPIOB->DOE31_0 |= (1 << SEL0) | (1 << SEL1) | (1 << SEL2) | (1 << SEL3);
-  // IOMUX->SECCFG.PINCM[PB24INDEX] = 0x00000081;
-  // IOMUX->SECCFG.PINCM[PB20INDEX] = 0x00000081;
-  // IOMUX->SECCFG.PINCM[PB4INDEX] = 0x00000081;
-  // IOMUX->SECCFG.PINCM[PB3INDEX] = 0x00000081;
-
-  // chip PA12, PA13, PA22, PA16
-  GPIOA->DOE31_0 |= (1 << SEL0) | (1 << SEL1) | (1 << SEL2) | (1 << SEL3);
-  IOMUX->SECCFG.PINCM[PA12INDEX] = 0x00000081;
-  IOMUX->SECCFG.PINCM[PA13INDEX] = 0x00000081;
-  IOMUX->SECCFG.PINCM[PA22INDEX] = 0x00000081;
-  IOMUX->SECCFG.PINCM[PA16INDEX] = 0x00000081;
-}
-
 void initLCD(void) {
   ST7735_InitR(INITR_REDTAB);
 }
 
-void incrementMux(void) {
-  // cycle through hall sensor with mux selection lines
-  static uint8_t count = 0;
-  if(count > 12) { // we only need 12 out of the 16 mux inputs
-    count = 0;
-  }
-  uint8_t count0 = count & 1;
-  uint8_t count1 = (count & (1 << 1)) >> 1;
-  uint8_t count2 = (count & (1 << 2)) >> 2;
-  uint8_t count3 = (count & (1 << 3)) >> 3;
-
-  // LPAD
-  // GPIOB->DOUTCLR31_0 = (1 << SEL0) | (1 << SEL1) | (1 << SEL2) | (1 << SEL3);
-  // GPIOB->DOUTSET31_0 = (count0 << SEL0) | (count1 << SEL1) | (count2 << SEL2) | (count3 << SEL3);
-
-  // CHIP
-  GPIOA->DOUTCLR31_0 = (1 << SEL0) | (1 << SEL1) | (1 << SEL2) | (1 << SEL3);
-  GPIOA->DOUTSET31_0 = (count0 << SEL0) | (count1 << SEL1) | (count2 << SEL2) | (count3 << SEL3);
-  count++;
-}
 
 void toggleHeart(void) {
   // GPIOA->DOUTTGL31_0 ^= (1 << RUN_LED); //heartbeat
@@ -119,21 +83,22 @@ int main(void){ // main1
   // initHeart();
   // initMux();
   // initLCD();
-  initUART();
+  I2C_Init();
+  //initUART();
   // DAC_Init();
-  TimerG6_IntArm(10, 0, 0); // sound test
+  //TimerG6_IntArm(10, 0, 0); // sound test
   // TimerG7_IntArm(UINT16_MAX, 0, 0); // blinky
   
   __enable_irq();
   while(1){
     // readUART0();
-    UART_OutChar('a');
+   // UART_OutChar('a');
 
-    char lol = UART_InChar();
-    lol++;
-    lol++;
-    lol++;
-    lol++;
+    // char lol = UART_InChar();
+    // lol++;
+    // lol++;
+    // lol++;
+    // lol++;
     
     // ST7735_FillScreen(0);
     // DAC_Out(2048);

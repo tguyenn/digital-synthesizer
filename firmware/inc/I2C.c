@@ -50,8 +50,8 @@ void I2C_Init(void){
   // bit 25 hiZ
   // bit 7 PC peripheral connect
   // bits 4-0 I2C
-  IOMUX->SECCFG.PINCM[PB3INDEX]  = 0x02040084;  // I2C SDA
-  IOMUX->SECCFG.PINCM[PB2INDEX]  = 0x02040084;  // I2C SCL
+  IOMUX->SECCFG.PINCM[PA10INDEX]  = 0x02040084;  // I2C SDA
+  IOMUX->SECCFG.PINCM[PA11INDEX]  = 0x02040084;  // I2C SCL
 
   Clock_Delay(24); // time for gpio to power up
   I2C1->CLKSEL = 8; // SYSCLK

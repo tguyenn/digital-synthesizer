@@ -61,6 +61,11 @@
 			<locationURI>PARENT-1-PROJECT_LOC/inc/Timer.c</locationURI>
 		</link>
 		<link>
+			<name>encoder.c</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/lib/encoder.c</locationURI>
+		</link>
+		<link>
 			<name>myUART.c</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/lib/myUART.c</locationURI>
