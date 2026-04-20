@@ -41,6 +41,11 @@
 			<locationURI>PARENT-1-PROJECT_LOC/inc/DAC.c</locationURI>
 		</link>
 		<link>
+			<name>DMA.c</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/lib/DMA.c</locationURI>
+		</link>
+		<link>
 			<name>I2C.c</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/inc/I2C.c</locationURI>

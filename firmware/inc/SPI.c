@@ -19,6 +19,10 @@ J4.31 LCD RS     PA13
 #define PB8INDEX 24
 #define PB15INDEX 31
 #define PA13INDEX 34
+
+#define PB7INDEX 23
+
+
 // calls Clock_Freq to get bus clock
 // initialize SPI for 8 MHz baud clock
 // busy-wait synchronization
