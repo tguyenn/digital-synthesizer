@@ -7,8 +7,8 @@
 // =========================================================
 // MASTER SWITCH: Uncomment the target you are compiling for
 // =========================================================
-// #define TARGET_LAUNCHPAD
-#define TARGET_CUSTOM_CHIP
+#define TARGET_LAUNCHPAD
+// #define TARGET_CUSTOM_CHIP
 
 // =========================================================
 // CONFIGURATION PROFILES

@@ -21,12 +21,7 @@ SSD1306 oLED
 #include <ti/devices/msp/msp.h>
 #include "../inc/I2C.h"
 #include "../inc/Clock.h"
-#define PA10INDEX 11
-#define PA11INDEX 12
-#define PA27INDEX 59
-#define PB2INDEX 14
-#define PB3INDEX 15
-#define PB16INDEX 32
+#include "../inc/LaunchPad.h"
 
 // assume 80MHz bus clock
 // I2C in power domain PD0, so
@@ -52,8 +47,8 @@ void I2C_Init(void){
   // bit 25 hiZ
   // bit 7 PC peripheral connect
   // bits 4-0 I2C
-  IOMUX->SECCFG.PINCM[PA10INDEX]  = 0x02040084;  // I2C SDA
-  IOMUX->SECCFG.PINCM[PA11INDEX]  = 0x02040084;  // I2C SCL
+  IOMUX->SECCFG.PINCM[PA10INDEX]  = 0x02040088;  // I2C SDA
+  IOMUX->SECCFG.PINCM[PA11INDEX]  = 0x02040088;  // I2C SCL
 
   Clock_Delay(24); // time for gpio to power up
   I2C1->CLKSEL = 8; // SYSCLK

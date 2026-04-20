@@ -77,6 +77,10 @@ void TIMG6_IRQHandler() {
   DAC0->DATA0 = Wave16[i++ % 16];
 } 
 
+void TIMA1_IRQHandler(){
+  ADCoutput_t adc_vals = updateKeyVals();
+}
+
 // void TIMG7_IRQHandler() {
 //   incrementMux();
 //   toggleHeart();
@@ -86,15 +90,16 @@ int main(void){
   __disable_irq();
   PLL_Init(); 
   LaunchPad_Init(); 
-  initHeart();
+ // initHeart();
+  I2C_Init();
   initADC();
   // initLCD();
   // initUART();
-  I2C_Init();
   // DAC_Init();
   // TimerG6_IntArm(10, 0, 0); 
+  TimerA1_IntArm(1800, 0, 1);
   __enable_irq();
   while(1){
-    
+   // I2C_Recv2(0x48);
   }
 }
