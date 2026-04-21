@@ -1,7 +1,7 @@
 
-#include "../lib/ledStrip.h"
+#include "ledStrip.h"
 #include "../inc/PWM.c"
-#include "../lib/DMA.c"
+#include "dma.h"
 
 // run through velocity array
 // if velocity > some threshold, then trigger led pulse

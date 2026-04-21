@@ -1,5 +1,5 @@
-#include "../inc/ti_msp_dl_config.h" // dma
-#include "../lib/DMA.h"
+#include "ti_msp_dl_config.h" // dma
+#include "dma.h"
 
 #define CC01_REG 0x00001810 // address for capture compare register for PWM
 
