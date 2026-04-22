@@ -61,7 +61,7 @@ void DAC_Init(void){
   //     n=8 500 ksps
   //     n=9 1 Msps
   // bit 0 STIMEN =0 disable sample time generator
-  DAC0->CTL3 = 0x0700; // no sample time generator
+  DAC0->CTL3 = 0x0601; // no sample time generator
   DAC0->CTL0 = 0x0101; // 12-bit, straight, enable
 }
 

@@ -1,7 +1,8 @@
 #pragma once
 
 #define AUDIO_BUF_SIZE 256
+#define FULL_BUFFER_SIZE (AUDIO_BUF_SIZE * 2)
 
-void Audio_DAC_DMA_Init();
+void setupPingPongDMA();
 
-void Audio_DAC_DMA_swap();
+void DMA_IRQHandler(void);

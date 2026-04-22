@@ -14,10 +14,11 @@
 // #include "../inc/I2C.h"
 // #include "../lib/I2CADC.h"
 #include "../inc/ST7735.h"
+#include "../inc/DAC.h"
 
-// Include your new abstraction layer
 #include "../lib/ti_msp_dl_config.h"
 #include "../lib/Audio_DAC_DMA.h"
+
 #include "BoardConfig.h"
 
 // ADCoutput_t adc_vals;
@@ -60,12 +61,14 @@ void TIMA1_IRQHandler(){
 //   toggleHeart();
 // }
 
+volatile int pingorpong = -1;
 
 int main(void){ 
   __disable_irq();
-  // PLL_Init(); 
-  // LaunchPad_Init();
+  PLL_Init(); 
+  LaunchPad_Init();
   SYSCFG_DL_init();
+  // DAC_Init();
   // SYSCFG_DL_DAC12_init();
   // SYSCFG_DL_DMA_init();
  // initHeart();
@@ -87,13 +90,9 @@ int main(void){
     // TimerG0_IntArm(UINT16_MAX, 0, 0);
     // ST7735_InitR(INITR_REDTAB);
    // I2C_Recv2(0x48);
-  Audio_DAC_DMA_Init();
+  setupPingPongDMA();
   __enable_irq();
   while(1){
-    // ST7735_FillScreen(ST7735_BLUE);
-    for (int i = 0; i < 800000; i++) {
-      
-    }
-    Audio_DAC_DMA_swap();
+    
   }
 }
