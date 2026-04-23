@@ -77,7 +77,7 @@ void TIMG0_IRQHandler() { toggleHeart(); }
 // }
 */
 
-int main1(void) {
+int main(void) {
   __disable_irq();
   Clock_Init80MHz(0);
   LaunchPad_Init();
@@ -92,7 +92,7 @@ int main1(void) {
   }
 }
 
-int main(void) {
+int main2(void) {
     __disable_irq();
     Clock_Init80MHz(0);
     LaunchPad_Init();

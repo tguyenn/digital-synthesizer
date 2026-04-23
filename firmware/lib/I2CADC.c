@@ -80,11 +80,11 @@ void setMux(uint8_t channel) {
 #define RESTING_ADC_VAL 2110
 
 // Hysteresis thresholds to prevent bouncing/stuttering
-#define POS_ATTACK_THRESH 400  // How far down the key must be to trigger
-#define POS_RELEASE_THRESH 300 // Must lift up past this point to release
+#define POS_ATTACK_THRESH 250  // How far down the key must be to trigger
+#define POS_RELEASE_THRESH 250 // Must lift up past this point to release
 
 // Minimum speed required to trigger a note (rejects slow drifts/noise)
-#define MIN_ATTACK_VEL_THRESH 10
+#define MIN_ATTACK_VEL_THRESH 20
 // ============================================================================
 
 // State tracking arrays (Private to this ISR)
@@ -100,15 +100,15 @@ inline void updateSingleKeyVal(void) {
 
   // 2. Normalize displacement based on alternating magnet polarities
   int16_t displacement = 0;
-  // if (current_key % 2 == 0) {
-  //   // Even keys (e.g., North Pole approaching: Voltage goes UP)
-  //   displacement = raw_adc - RESTING_ADC_VAL;
-  // } else {
-  //   // Odd keys (e.g., South Pole approaching: Voltage goes DOWN)
-  //   displacement = RESTING_ADC_VAL - raw_adc;
-  // }
+  if (current_key % 2 == 0) {
+    // Even keys (e.g., North Pole approaching: Voltage goes UP)
+    displacement = raw_adc - RESTING_ADC_VAL;
+  } else {
+    // Odd keys (e.g., South Pole approaching: Voltage goes DOWN)
+    displacement = RESTING_ADC_VAL - raw_adc;
+  }
 
-  displacement = raw_adc - RESTING_ADC_VAL;
+  // displacement = raw_adc - RESTING_ADC_VAL;
 
 
   // 3. Calculate physical velocity (Rate of change of displacement)
