@@ -10,11 +10,11 @@ typedef struct {
     uint16_t position[TOTAL_KEYS];
 } ADCoutput_t;
 
+extern int16_t prev_displacement[TOTAL_KEYS];
+
 void initADC(void);
 void initMux(void);
-uint16_t readADC(uint8_t address);
-void incrementMux(void);
-ADCoutput_t updateKeyVals(void);
-
+void updateSingleKeyVal(void);
+void TIMA1_IRQHandler();
 
 #endif

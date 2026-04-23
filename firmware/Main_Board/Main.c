@@ -2,6 +2,8 @@
 #include <stdint.h>
 #include <stdio.h>
 
+#include "../lib/ti_msp_dl_config.h"
+
 #include "../inc/Clock.h"
 #include "../inc/LaunchPad.h"
 #include "../inc/Timer.h"
@@ -11,17 +13,16 @@
 // #include "../lib/myUART.h"
 // #include "../lib/ledStrip.h"
 // #include "../inc/I2C.h"
-// #include "../lib/I2CADC.h"
-#include "../inc/DAC.h"
+#include "../lib/I2CADC.h"
+// #include "../inc/DAC.h"
 #include "../inc/ST7735.h"
-#include "../lib/encoder.h"
 
 #include "../lib/Audio_DAC_DMA.h"
-#include "../lib/ti_msp_dl_config.h"
+#include "../lib/encoder.h"
+#include "../lib/synth.h"
+
 
 #include "BoardConfig.h"
-
-// ADCoutput_t adc_vals;
 
 void PLL_Init(void) {
   // Calls the correct clock function based on BoardConfig.h
@@ -37,12 +38,6 @@ void initHeart(void) {
 void toggleHeart(void) { LED_PORT->DOUTTGL31_0 = (1 << LED_PIN); }
 
 void TIMG0_IRQHandler() { toggleHeart(); }
-
-void TIMA1_IRQHandler() {
-  // adc_vals = updateKeyVals();
-}
-
-volatile int pingorpong = -1;
 
 /*// pls stop merge conflict 😔
 // int main(void) {
@@ -87,9 +82,11 @@ int main(void) {
   DAC0_Init();
   TimerG0_32kHz_EventArm();
   DMA_Init_CircularPingPong();
+  initADC();
   __enable_irq();
+  // Triggering a wide C Major chord
   while (1) {
-    
+    Synth_Write_Buf();
   }
 }
 

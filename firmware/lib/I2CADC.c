@@ -1,18 +1,17 @@
 #include "I2CADC.h"
-#include <ti/devices/msp/msp.h>
 #include "../inc/I2C.h"
 #include "../inc/LaunchPad.h"
+#include "../inc/Timer.h"
+#include "../lib/synth.h"
+#include <ti/devices/msp/msp.h>
 
-
-
-#define SEL0 20 
+#define SEL0 20
 #define SEL1 24
 #define SEL2 3
 #define SEL3 4
 
-static uint16_t prev_val[TOTAL_KEYS]= {0};
-uint8_t addresses[5] = {0x48, 0x49, 0x4A, 0x4C,0x4D};
-
+static uint16_t prev_val[TOTAL_KEYS] = {0};
+uint8_t addresses[5] = {0x48, 0x49, 0x4A, 0x4C, 0x4D};
 
 void initMux(void) {
   // LP PB24, PB20, PB4, PB3 -> S0, S1, S2, S3
@@ -22,54 +21,128 @@ void initMux(void) {
   IOMUX->SECCFG.PINCM[PB4INDEX] = 0x00000081;
   IOMUX->SECCFG.PINCM[PB3INDEX] = 0x00000081;
 }
- 
-void initADC(void){
-    initMux(); 
+
+void initADC(void) {
+  initMux();
+  I2C_Init();
+  TimerA1_IntArm(80000000 / 1800, 1, 4);
 }
 
-//gets msb and lsb via I2C from whatever data passed by muxes
+// gets msb and lsb via I2C from whatever data passed by muxes
 uint16_t readADC(uint8_t address) {
-    uint16_t raw_data = I2C_Recv2(address);
-    
-    return (raw_data & 0x0FFF);
+  uint16_t raw_data = I2C_Recv2(address);
+
+  return (raw_data & 0x0FFF);
 }
 
 void incrementMux(void) {
   // cycle through hall sensor with mux selection lines
   static uint8_t count = 0;
-  if(count > 11) { // we only need 12 out of the 16 mux inputs
+  if (count > 11) { // we only need 12 out of the 16 mux inputs
     count = 0;
   }
-  
+
   uint8_t count0 = count & 1;
   uint8_t count1 = (count & (1 << 1)) >> 1;
   uint8_t count2 = (count & (1 << 2)) >> 2;
   uint8_t count3 = (count & (1 << 3)) >> 3;
-  
+
   GPIOB->DOUTCLR31_0 = (1 << SEL0) | (1 << SEL1) | (1 << SEL2) | (1 << SEL3);
-  GPIOB->DOUTSET31_0 = (count0 << SEL0) | (count1 << SEL1) | (count2 << SEL2) | (count3 << SEL3);
+  GPIOB->DOUTSET31_0 =
+      (count0 << SEL0) | (count1 << SEL1) | (count2 << SEL2) | (count3 << SEL3);
   count++;
 }
 
-ADCoutput_t updateKeyVals(void){
-  ADCoutput_t current_output;
-  
-  for (uint8_t octave = 0; octave< 5; octave++){
-    for (int key = 0; key < 12; key++){
-      incrementMux();
-      for(volatile int delay = 0; delay < 50; delay++);
-      
-      uint16_t key_val = readADC(addresses[octave]);
-      int key_num = (octave * 12) + key;
-      current_output.position[key_num] = key_val;
-      
-      int16_t velocity = key_val - prev_val[key_num];
-      current_output.velocity[key_num] = velocity;
-
-      prev_val[key_num] = key_val;     
-    }
+void setMux(uint8_t channel) {
+  // Optional safety catch: ensure we never select an unconnected channel
+  if (channel > 11) { 
+    channel = 0;
   }
-  return current_output;
+
+  // 1. Extract the individual bits from the absolute channel number
+  uint8_t bit0 = channel & 1;
+  uint8_t bit1 = (channel & (1 << 1)) >> 1;
+  uint8_t bit2 = (channel & (1 << 2)) >> 2;
+  uint8_t bit3 = (channel & (1 << 3)) >> 3;
+
+  // 2. Clear all 4 select lines simultaneously
+  GPIOB->DOUTCLR31_0 = (1 << SEL0) | (1 << SEL1) | (1 << SEL2) | (1 << SEL3);
+  
+  // 3. Set the specific lines High based on the binary channel number
+  GPIOB->DOUTSET31_0 =
+      (bit0 << SEL0) | (bit1 << SEL1) | (bit2 << SEL2) | (bit3 << SEL3);
 }
 
+// ============================================================================
+// CALIBRATION CONSTANTS (Tune these to your specific hardware)
+// ============================================================================
+// Assuming 12-bit ADC (0-4095). 1.7V / 3.3V * 4095 = ~2110
+#define RESTING_ADC_VAL 2110
 
+// Hysteresis thresholds to prevent bouncing/stuttering
+#define POS_ATTACK_THRESH 400  // How far down the key must be to trigger
+#define POS_RELEASE_THRESH 300 // Must lift up past this point to release
+
+// Minimum speed required to trigger a note (rejects slow drifts/noise)
+#define MIN_ATTACK_VEL_THRESH 10
+// ============================================================================
+
+// State tracking arrays (Private to this ISR)
+int16_t prev_displacement[NUM_KEYS] = {0};
+static bool key_is_pressed[NUM_KEYS] = {false};
+
+inline void updateSingleKeyVal(void) {
+  static uint8_t current_key = 0;
+  uint8_t octave = current_key / 12;
+
+  // 1. Read the settled ADC value
+  int16_t raw_adc = (int16_t)readADC(addresses[octave]);
+
+  // 2. Normalize displacement based on alternating magnet polarities
+  int16_t displacement = 0;
+  // if (current_key % 2 == 0) {
+  //   // Even keys (e.g., North Pole approaching: Voltage goes UP)
+  //   displacement = raw_adc - RESTING_ADC_VAL;
+  // } else {
+  //   // Odd keys (e.g., South Pole approaching: Voltage goes DOWN)
+  //   displacement = RESTING_ADC_VAL - raw_adc;
+  // }
+
+  displacement = raw_adc - RESTING_ADC_VAL;
+
+
+  // 3. Calculate physical velocity (Rate of change of displacement)
+  // Because displacement is normalized, a downward press always yields positive
+  // velocity
+  int16_t velocity = displacement - prev_displacement[current_key];
+  prev_displacement[current_key] = displacement;
+
+  // 4. Trigger Logic (State Machine)
+  if (!key_is_pressed[current_key]) {
+    // Note is currently OFF. Check if we should Attack.
+    if (displacement > POS_ATTACK_THRESH && velocity >= MIN_ATTACK_VEL_THRESH) {
+      key_is_pressed[current_key] = true;
+      Attack_Key(current_key, velocity);
+    }
+  } else {
+    // Note is currently ON. Check if we should Release.
+    // Notice we don't check velocity here, just position.
+    if (displacement < POS_RELEASE_THRESH) {
+      key_is_pressed[current_key] = false;
+      Release_Key(current_key);
+    }
+  }
+
+  // 5. Advance Multiplexer for the next ISR cycle
+  // incrementMux();
+  setMux((current_key + 1) % 12);
+
+  current_key++;
+  if (current_key >= NUM_KEYS) {
+    current_key = 0;
+  }
+}
+
+void TIMA1_IRQHandler() {
+  updateSingleKeyVal();
+}

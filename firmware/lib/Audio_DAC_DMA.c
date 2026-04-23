@@ -198,6 +198,7 @@ void DMA_Init_CircularPingPong() {
       (DMA_CPU_INT_IMASK_DMACH0_SET | DMA_CPU_INT_IMASK_PREIRQCH0_SET);
 
   // Enable DMA Interrupt in Cortex-M0+ NVIC
+  NVIC_SetPriority(DMA_INT_IRQn, 0);
   NVIC_EnableIRQ(DMA_INT_IRQn);
 }
 
