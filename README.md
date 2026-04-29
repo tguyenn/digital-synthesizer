@@ -1,12 +1,9 @@
-
-
-
-# Imagiano
+# Imagiano | Digital Synthesizer Project
 Brought to you by...
-@jeffchang0
-@MorrisYLin
-@zaarabilal
-@tguyenn
+[@jeffchang0](https://github.com/jeffchang0)    
+[@MorrisYLin](https://github.com/MorrisYLin)    
+[@zaarabilal](https://github.com/zaarabilal)    
+[@tguyenn](https://github.com/tguyenn)    
 
 We decided to build a digital synthesizer/piano for our final project in UT Austin's Embedded Lab Class! We thought a piano was a great idea since we all love music, and a digital synthesizer presented a good deal of programming and electrical challenges.
 
@@ -23,9 +20,11 @@ Our digital piano consists of
 1.) A main controller board  
 2.) A series of peripheral boards  
 3.) Piano keys with magnets  
-4.) Piano enclosure  
+4.) Piano enclosure     
+    
 ... all from scratch!
 
+## Table of Contents
 TODO: insert toc
 
 ## System Design
@@ -35,12 +34,15 @@ We knew we wanted to make a piano of a larger scale, so we had to figure out how
 
 After some thinking and debate, we came down to this diagram for our overall system design:    
 
-We opted to have a main controller board daisy-chained with a series of peripheral boards. This main board would also be connected to user interfaces like an LCD, digital rotary encoders, and an addressable LED strip.    
+We opted to have a main controller board daisy-chained with a series of peripheral boards. This main board would also be connected to user interfaces like an LCD, digital rotary encoders, and an addressable LED strip.        
+
+TODO: fix text rendering on some of these lol
 <p align="center">
   <img src="docs/crude_system_diagram.png" width="400" alt="System Diagram">
 </p>
-Each peripheral board would have an array of linear Hall effect sensors to determine key position, with 12 of these sensors to form an octave. 5 of these peripheral boards allowed us to cover a good range of pitches!     
-
+Each peripheral board would have an array of linear Hall effect sensors to determine key position, with 12 of these sensors to form an octave. 5 of these peripheral boards allowed us to cover a good range of pitches!  
+       
+TODO: fix hall sensor 1 duplicate
 <p align="center">
   <img src="docs/crude_peripheral_diagram.png" width="400" alt="Peripheral Diagram">
 </p>
@@ -112,6 +114,12 @@ TODO: @jeffchang0 mechanical design challenges
 TODO: talk about mass manufacturing of keys
     - shoutout "tiw"
 
+## Firmware Design
+
+TODO: @MorrisYLin @zaarabilal pls
+
+talk about what modules we were to use, drivers we had to make, coding practices, etc
+
 ## implementation challenges
 - jumpers!
 - never trust anything. everything is a lie
@@ -133,13 +141,14 @@ TODO: talk about mass manufacturing of keys
 Due to time and budget restrictions, we weren't able to cleanly implement all of our features. We didn't like that, so we decided to spin a new revision of the main board to add and fix some features.
 
 Some of these features include:
-- new dual core microcontroller to properly handle the math compute load, sound output, LED output, and user interface
-- removed backpad devkit
+- Replace MSPM0G3507 with dual core microcontroller to properly handle the math compute load, sound output, LED output, and user interface
+- Removed backpack devkit
 - SD card for loading in graphics and differnet preset sound configs??
 - Cleaned audio output circuit
 - Silkscreen art!
 - Replaced all through-hole with SMD
 - Replace all LDO with switching regulator
+- black silkscreen + enig because i love burning money
 
 ![Mv2_F](docs/mainboardv2_F.png)
 ![Mv2_B](docs/mainboardv2_B.png)
