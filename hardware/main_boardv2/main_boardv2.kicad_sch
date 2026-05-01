@@ -158,6 +158,346 @@
 		(at 261.62 137.16)
 		(uuid "ff6259d9-14e5-416b-ae94-724d8833ee8c")
 	)
+	(bus
+		(pts
+			(xy 133.35 80.01) (xy 140.97 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0468783e-c887-4868-8f8a-fe3a17ecd6c6")
+	)
+	(bus
+		(pts
+			(xy 138.43 121.92) (xy 151.13 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "06ec7a18-5543-42cb-bf14-e5fe6379cd1d")
+	)
+	(wire
+		(pts
+			(xy 146.05 114.3) (xy 151.13 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "094dea97-36d6-473c-a0ab-f4e22e3b7a23")
+	)
+	(bus
+		(pts
+			(xy 104.14 125.73) (xy 110.49 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1238aaa8-f06b-44df-8d0e-9a39227987df")
+	)
+	(wire
+		(pts
+			(xy 151.13 119.38) (xy 140.97 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1305adbd-3e67-43ab-bbc7-7c8d3bec2f78")
+	)
+	(wire
+		(pts
+			(xy 133.35 88.9) (xy 151.13 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "13bcb238-3c7f-4fa9-8121-afb738d2a9f7")
+	)
+	(bus
+		(pts
+			(xy 104.14 101.6) (xy 104.14 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "197c3ead-b327-4b0a-90b9-3c2da2bf48c8")
+	)
+	(wire
+		(pts
+			(xy 133.35 97.79) (xy 146.05 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1af8dbda-6e96-4b28-9144-829d79873ba1")
+	)
+	(bus
+		(pts
+			(xy 138.43 105.41) (xy 138.43 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "20e7a1fe-a567-443d-99a5-6e9d8a82e6fa")
+	)
+	(wire
+		(pts
+			(xy 133.35 100.33) (xy 143.51 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "231ae9b7-c369-44ac-b640-c31618d0c9bd")
+	)
+	(bus
+		(pts
+			(xy 107.95 96.52) (xy 99.06 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "238d63a3-6bf7-4ca9-8c93-a23deb6281f4")
+	)
+	(bus
+		(pts
+			(xy 133.35 105.41) (xy 138.43 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "32d15700-7ad5-46b5-bbbe-08c82846aca0")
+	)
+	(bus
+		(pts
+			(xy 99.06 96.52) (xy 99.06 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "33255203-4746-4bf1-8225-dee4ff72445f")
+	)
+	(wire
+		(pts
+			(xy 133.35 91.44) (xy 151.13 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "347f1078-b864-4240-9ddf-56fe20734c83")
+	)
+	(wire
+		(pts
+			(xy 146.05 97.79) (xy 146.05 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "396f8259-9184-4d0f-a8e0-09f8b5ea5f9a")
+	)
+	(bus
+		(pts
+			(xy 101.6 59.69) (xy 101.6 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4c6f7805-ea3f-4af3-a4df-723c67587862")
+	)
+	(bus
+		(pts
+			(xy 133.35 93.98) (xy 151.13 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ee01420-93f7-44e4-96c4-f2279f1f0f9e")
+	)
+	(bus
+		(pts
+			(xy 140.97 80.01) (xy 140.97 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "51e9510c-1e9b-404a-b60c-b8c328d4b899")
+	)
+	(bus
+		(pts
+			(xy 151.13 63.5) (xy 143.51 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "581b603a-5f79-4c30-86a0-2332f870c315")
+	)
+	(bus
+		(pts
+			(xy 143.51 82.55) (xy 133.35 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "626325b7-9c92-43e3-982d-2a2f823e9e02")
+	)
+	(bus
+		(pts
+			(xy 101.6 81.28) (xy 107.95 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "67f4d6b2-4c6e-430a-867f-b18e2af49b21")
+	)
+	(bus
+		(pts
+			(xy 101.6 99.06) (xy 101.6 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6bcade8e-c4fe-457e-bba5-fae704f33994")
+	)
+	(wire
+		(pts
+			(xy 92.71 85.09) (xy 107.95 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "748cca58-cf0c-4e7a-9536-9e4429394006")
+	)
+	(wire
+		(pts
+			(xy 143.51 100.33) (xy 143.51 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7c1f4104-4bac-4e40-ae68-66683e94271d")
+	)
+	(bus
+		(pts
+			(xy 107.95 101.6) (xy 104.14 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "858bc628-2483-4c8d-8aef-3bc91e980d4c")
+	)
+	(bus
+		(pts
+			(xy 101.6 128.27) (xy 110.49 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d258916-b226-441a-aa5c-25f7291b634c")
+	)
+	(wire
+		(pts
+			(xy 140.97 102.87) (xy 133.35 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5955b6a-a759-43b9-ad71-5594557678b4")
+	)
+	(wire
+		(pts
+			(xy 143.51 116.84) (xy 151.13 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c77add44-06b3-4d90-b9c7-d1144d1deb62")
+	)
+	(bus
+		(pts
+			(xy 140.97 60.96) (xy 151.13 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cc8334ac-553e-45eb-a813-afaddc8cb0be")
+	)
+	(bus
+		(pts
+			(xy 107.95 99.06) (xy 101.6 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d096678a-fc5d-4835-a462-407557900780")
+	)
+	(wire
+		(pts
+			(xy 140.97 119.38) (xy 140.97 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d0d375f3-aae3-49d4-bf1b-401c46227081")
+	)
+	(bus
+		(pts
+			(xy 143.51 63.5) (xy 143.51 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dfc2390d-6018-4c7a-9edb-aacfe379e373")
+	)
+	(bus
+		(pts
+			(xy 110.49 59.69) (xy 101.6 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb762c85-2522-4c3b-97f3-5641368836bb")
+	)
+	(bus
+		(pts
+			(xy 99.06 130.81) (xy 110.49 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef4c9619-1f33-400e-8bca-071a1fc9fc5c")
+	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
 		(at 261.62 154.94 0)
@@ -501,7 +841,7 @@
 			)
 		)
 		(pin "S[0..3]" output
-			(at 107.95 99.06 180)
+			(at 107.95 101.6 180)
 			(uuid "907d6478-efb4-4d3a-9023-96598a30fa33")
 			(effects
 				(font
@@ -511,7 +851,7 @@
 			)
 		)
 		(pin "I2C0{I2C}" bidirectional
-			(at 107.95 96.52 180)
+			(at 107.95 99.06 180)
 			(uuid "74cdef31-8a95-46ce-93f5-14165c85e734")
 			(effects
 				(font
@@ -580,6 +920,26 @@
 				(justify right)
 			)
 		)
+		(pin "USB{USB}" bidirectional
+			(at 107.95 81.28 180)
+			(uuid "d33e8856-e20d-456b-be77-13a67b41851c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "I2C1{I2C}" bidirectional
+			(at 107.95 96.52 180)
+			(uuid "f3d8c566-b31f-4460-ae93-3c914ce2c36a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(instances
 			(project "main_boardv2"
 				(path "/5332464e-0c3a-49d2-8fb5-731d0e42ee15"
@@ -623,7 +983,7 @@
 			)
 		)
 		(pin "S[0..3]" input
-			(at 110.49 128.27 180)
+			(at 110.49 125.73 180)
 			(uuid "c6f87114-1e3d-4785-b51b-48ea7391f40b")
 			(effects
 				(font
@@ -633,8 +993,18 @@
 			)
 		)
 		(pin "I2C0{I2C}" bidirectional
-			(at 110.49 130.81 180)
+			(at 110.49 128.27 180)
 			(uuid "6de1b17d-2963-4ca6-84a4-00400662b8b8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "I2C1{I2C}" bidirectional
+			(at 110.49 130.81 180)
+			(uuid "efeabf5e-d7f1-44b2-b752-8fcf239bdcb3")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -682,6 +1052,16 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "USB{USB}" bidirectional
+			(at 110.49 59.69 180)
+			(uuid "ea05619a-99a2-4c24-a440-981b0b3ba1aa")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
@@ -827,7 +1207,7 @@
 		)
 	)
 	(sheet
-		(at 73.66 77.47)
+		(at 72.39 77.47)
 		(size 20.32 21.59)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -843,7 +1223,7 @@
 		)
 		(uuid "efc14d49-5591-4687-bd9d-a48f4b92c254")
 		(property "Sheetname" "LED Strip"
-			(at 73.66 76.7584 0)
+			(at 72.39 76.7584 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -852,7 +1232,7 @@
 			)
 		)
 		(property "Sheetfile" "LED_STRIPS.kicad_sch"
-			(at 73.66 99.6446 0)
+			(at 72.39 99.6446 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -861,7 +1241,7 @@
 			)
 		)
 		(pin "LED_DATA" input
-			(at 93.98 85.09 0)
+			(at 92.71 85.09 0)
 			(uuid "59e6f80b-8435-49bc-bd67-a7a95a8d5d88")
 			(effects
 				(font

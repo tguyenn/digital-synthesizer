@@ -1,6 +1,8 @@
+<div align="center">
+Imagiano | Digital Synthesizer Project
+</div>
 
-# Imagiano | Digital Synthesizer Project
-$$\color{#CC5500} \text{UT ECE445L Competition Project}$$
+## $$\color{#CC5500} \text{UT ECE445L Competition Project}$$
 
 Brought to you by...    
 [@jeffchang0](https://github.com/jeffchang0)    

@@ -806,6 +806,410 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "SamacSys_Parts:PCM1780DBQR"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "IC"
+				(at 39.37 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Value" "PCM1780DBQR"
+				(at 39.37 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "SOP64P600X175-16N"
+				(at 39.37 -94.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.ti.com/lit/gpn/PCM1780"
+				(at 39.37 -194.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Description" "106dB SNR Stereo DAC (S/W Control)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Height" "1.75"
+				(at 39.37 -394.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Part Number" "595-PCM1780DBQR"
+				(at 39.37 -494.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/PCM1780DBQR?qs=wgAEGBTxy7nuCOVzhPg7nw%3D%3D"
+				(at 39.37 -594.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Name" "Texas Instruments"
+				(at 39.37 -694.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Part_Number" "PCM1780DBQR"
+				(at 39.37 -794.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(symbol "PCM1780DBQR_1_1"
+				(rectangle
+					(start 5.08 2.54)
+					(end 38.1 -20.32)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at 0 0 0)
+					(length 5.08)
+					(name "ZEROL/NA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 0)
+					(length 5.08)
+					(name "~{MS}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 0)
+					(length 5.08)
+					(name "MC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -7.62 0)
+					(length 5.08)
+					(name "MD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -10.16 0)
+					(length 5.08)
+					(name "SCK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -12.7 0)
+					(length 5.08)
+					(name "DATA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -15.24 0)
+					(length 5.08)
+					(name "BCK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -17.78 0)
+					(length 5.08)
+					(name "LRCK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 43.18 0 180)
+					(length 5.08)
+					(name "ZEROR/ZEROA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 43.18 -2.54 180)
+					(length 5.08)
+					(name "VOUTL"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 43.18 -5.08 180)
+					(length 5.08)
+					(name "VOUTR"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 43.18 -7.62 180)
+					(length 5.08)
+					(name "VCOM"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 43.18 -10.16 180)
+					(length 5.08)
+					(name "AGND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 43.18 -12.7 180)
+					(length 5.08)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 43.18 -15.24 180)
+					(length 5.08)
+					(name "NC_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 43.18 -17.78 180)
+					(length 5.08)
+					(name "NC_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "SamacSys_Parts:trs_audio_jack"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -1330,8 +1734,8 @@
 		(uuid b526d69c-72a8-4152-873a-39fe5bebf3ff)
 	)
 	(rectangle
-		(start 49.53 36.83)
-		(end 160.782 79.502)
+		(start 49.53 74.93)
+		(end 160.782 117.602)
 		(stroke
 			(width 0)
 			(type default)
@@ -1363,6 +1767,16 @@
 		)
 		(uuid "1c8abbd4-00d3-43af-8a0e-f27b870ecd47")
 	)
+	(text "DAC"
+		(exclude_from_sim no)
+		(at 74.676 24.892 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "36267677-5dbc-4d3d-b87e-a61fed20931c")
+	)
 	(text "UART1 Breakout"
 		(exclude_from_sim no)
 		(at 22.098 39.116 0)
@@ -1372,6 +1786,16 @@
 			)
 		)
 		(uuid "3b77fa04-96f4-4f42-9a1a-5bc4abfa0d14")
+	)
+	(text "todo: make stereo output!"
+		(exclude_from_sim no)
+		(at 157.226 71.12 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "4b75ac75-5ad4-4e6a-9803-d44c8a54b304")
 	)
 	(text "Hierarchical Labels"
 		(exclude_from_sim no)
@@ -1383,9 +1807,19 @@
 		)
 		(uuid "bb02ee3a-a4e0-49f5-a260-47ac368ec644")
 	)
+	(text "todo: hardware filtering / distortion?"
+		(exclude_from_sim no)
+		(at 168.91 56.896 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "e3d912bb-ee44-48ff-bea8-a16d9ac03425")
+	)
 	(text "Speaker Input"
 		(exclude_from_sim no)
-		(at 56.642 38.608 0)
+		(at 56.642 76.708 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1394,61 +1828,61 @@
 		(uuid "fb15be86-34a4-4a59-9682-f0dc08944c16")
 	)
 	(junction
-		(at 64.77 58.42)
+		(at 64.77 96.52)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0c5ab18e-e450-4dca-8fe4-cff0dce43802")
 	)
 	(junction
-		(at 93.98 68.58)
+		(at 93.98 106.68)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "35297466-3a5b-45c5-b256-e7dd52caf0d1")
 	)
 	(junction
-		(at 115.57 60.96)
+		(at 115.57 99.06)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "393f480e-b593-4421-b7b1-7ea2d2773815")
 	)
 	(junction
-		(at 104.14 60.96)
+		(at 104.14 99.06)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "47a97cf3-7458-4d81-b15d-5068b845af6a")
 	)
 	(junction
-		(at 130.81 60.96)
+		(at 130.81 99.06)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "59ee1116-f278-4f7c-9443-0d611a54ce02")
 	)
 	(junction
-		(at 125.73 57.15)
+		(at 125.73 95.25)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9f3de375-92da-4c7e-b5e3-cf544ca391d4")
 	)
 	(junction
-		(at 93.98 52.07)
+		(at 93.98 90.17)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "aac90d9e-b818-4b22-bab0-e7fd978489b7")
 	)
 	(junction
-		(at 128.27 60.96)
+		(at 128.27 99.06)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b17574ba-979e-4960-9104-23f0ff276572")
 	)
 	(junction
-		(at 88.9 46.99)
+		(at 88.9 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c0b4a4f5-5ef9-4d46-87f9-f1cf7768be06")
 	)
 	(junction
-		(at 73.66 58.42)
+		(at 73.66 96.52)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "edd6f58c-28f6-4919-8ce8-434d67d40b11")
@@ -1482,7 +1916,7 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 59.69) (xy 130.81 60.96)
+			(xy 130.81 97.79) (xy 130.81 99.06)
 		)
 		(stroke
 			(width 0)
@@ -1492,7 +1926,7 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 68.58) (xy 115.57 69.85)
+			(xy 115.57 106.68) (xy 115.57 107.95)
 		)
 		(stroke
 			(width 0)
@@ -1502,7 +1936,7 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 57.15) (xy 125.73 57.15)
+			(xy 123.19 95.25) (xy 125.73 95.25)
 		)
 		(stroke
 			(width 0)
@@ -1512,7 +1946,7 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 60.96) (xy 128.27 60.96)
+			(xy 115.57 99.06) (xy 128.27 99.06)
 		)
 		(stroke
 			(width 0)
@@ -1532,7 +1966,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 60.96) (xy 104.14 74.93)
+			(xy 104.14 99.06) (xy 104.14 113.03)
 		)
 		(stroke
 			(width 0)
@@ -1542,7 +1976,7 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 57.15) (xy 130.81 57.15)
+			(xy 125.73 95.25) (xy 130.81 95.25)
 		)
 		(stroke
 			(width 0)
@@ -1562,7 +1996,7 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 60.96) (xy 115.57 60.96)
+			(xy 111.76 99.06) (xy 115.57 99.06)
 		)
 		(stroke
 			(width 0)
@@ -1582,7 +2016,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 54.61) (xy 86.36 68.58)
+			(xy 86.36 92.71) (xy 86.36 106.68)
 		)
 		(stroke
 			(width 0)
@@ -1592,7 +2026,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 45.72) (xy 93.98 52.07)
+			(xy 93.98 83.82) (xy 93.98 90.17)
 		)
 		(stroke
 			(width 0)
@@ -1602,7 +2036,7 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 46.99) (xy 88.9 46.99)
+			(xy 90.17 85.09) (xy 88.9 85.09)
 		)
 		(stroke
 			(width 0)
@@ -1632,7 +2066,7 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 60.96) (xy 130.81 62.23)
+			(xy 130.81 99.06) (xy 130.81 100.33)
 		)
 		(stroke
 			(width 0)
@@ -1642,7 +2076,7 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 60.96) (xy 130.81 60.96)
+			(xy 128.27 99.06) (xy 130.81 99.06)
 		)
 		(stroke
 			(width 0)
@@ -1652,7 +2086,7 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 63.5) (xy 83.82 74.93)
+			(xy 83.82 101.6) (xy 83.82 113.03)
 		)
 		(stroke
 			(width 0)
@@ -1662,7 +2096,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 69.85) (xy 73.66 66.04)
+			(xy 73.66 107.95) (xy 73.66 104.14)
 		)
 		(stroke
 			(width 0)
@@ -1672,7 +2106,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 58.42) (xy 66.04 58.42)
+			(xy 64.77 96.52) (xy 66.04 96.52)
 		)
 		(stroke
 			(width 0)
@@ -1692,7 +2126,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 52.07) (xy 93.98 53.34)
+			(xy 93.98 90.17) (xy 93.98 91.44)
 		)
 		(stroke
 			(width 0)
@@ -1702,7 +2136,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 68.58) (xy 93.98 68.58)
+			(xy 86.36 106.68) (xy 93.98 106.68)
 		)
 		(stroke
 			(width 0)
@@ -1712,7 +2146,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 58.42) (xy 88.9 58.42)
+			(xy 73.66 96.52) (xy 88.9 96.52)
 		)
 		(stroke
 			(width 0)
@@ -1722,7 +2156,7 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 74.93) (xy 104.14 74.93)
+			(xy 83.82 113.03) (xy 104.14 113.03)
 		)
 		(stroke
 			(width 0)
@@ -1732,7 +2166,7 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 52.07) (xy 90.17 46.99)
+			(xy 90.17 90.17) (xy 90.17 85.09)
 		)
 		(stroke
 			(width 0)
@@ -1742,7 +2176,7 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 58.42) (xy 64.77 58.42)
+			(xy 62.23 96.52) (xy 64.77 96.52)
 		)
 		(stroke
 			(width 0)
@@ -1752,7 +2186,7 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 46.99) (xy 86.36 46.99)
+			(xy 88.9 85.09) (xy 86.36 85.09)
 		)
 		(stroke
 			(width 0)
@@ -1772,7 +2206,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 52.07) (xy 90.17 52.07)
+			(xy 93.98 90.17) (xy 90.17 90.17)
 		)
 		(stroke
 			(width 0)
@@ -1782,7 +2216,7 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 63.5) (xy 83.82 63.5)
+			(xy 88.9 101.6) (xy 83.82 101.6)
 		)
 		(stroke
 			(width 0)
@@ -1831,7 +2265,7 @@
 		(uuid "58238ce6-f642-449a-a7a1-fdefe22d48a5")
 	)
 	(label "DAC_OUT"
-		(at 62.23 58.42 180)
+		(at 62.23 96.52 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1925,7 +2359,7 @@
 	)
 	(symbol
 		(lib_id "Amplifier_Operational:LM321")
-		(at 96.52 60.96 0)
+		(at 96.52 99.06 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1933,7 +2367,7 @@
 		(dnp no)
 		(uuid "1fcacaeb-45c4-4ed9-b48b-fa2da5dddd0c")
 		(property "Reference" "IC502"
-			(at 101.346 53.34 0)
+			(at 101.346 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1941,7 +2375,7 @@
 			)
 		)
 		(property "Value" "LM321LVIDBVR"
-			(at 101.346 55.88 0)
+			(at 101.346 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1949,7 +2383,7 @@
 			)
 		)
 		(property "Footprint" "SamacSys_Parts:SOT95P280X145-5N"
-			(at 118.11 155.88 0)
+			(at 118.11 193.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1959,7 +2393,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/gpn/lm321lv"
-			(at 118.11 255.88 0)
+			(at 118.11 293.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1969,7 +2403,7 @@
 			)
 		)
 		(property "Description" "1-Channel Industry Standard Low Voltage Operational Amplifier"
-			(at 96.52 60.96 0)
+			(at 96.52 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1978,7 +2412,7 @@
 			)
 		)
 		(property "Height" "1.45"
-			(at 118.11 455.88 0)
+			(at 118.11 493.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1988,7 +2422,7 @@
 			)
 		)
 		(property "Mouser Part Number" "595-LM321LVIDBVR"
-			(at 118.11 555.88 0)
+			(at 118.11 593.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1998,7 +2432,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/LM321LVIDBVR?qs=qSfuJ%252Bfl%2Fd66sZ569ResAQ%3D%3D"
-			(at 118.11 655.88 0)
+			(at 118.11 693.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2008,7 +2442,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Texas Instruments"
-			(at 118.11 755.88 0)
+			(at 118.11 793.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2018,7 +2452,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "LM321LVIDBVR"
-			(at 118.11 855.88 0)
+			(at 118.11 893.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2053,7 +2487,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 125.73 57.15 0)
+		(at 125.73 95.25 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -2061,7 +2495,7 @@
 		(dnp no)
 		(uuid "4645cc95-adfa-47cb-9c63-494a84314067")
 		(property "Reference" "TP503"
-			(at 122.428 49.784 0)
+			(at 122.428 87.884 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2070,7 +2504,7 @@
 			)
 		)
 		(property "Value" "S"
-			(at 124.714 52.07 0)
+			(at 124.714 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2079,7 +2513,7 @@
 			)
 		)
 		(property "Footprint" "SamacSys_Parts:bettertestpoint2"
-			(at 130.81 57.15 0)
+			(at 130.81 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2088,7 +2522,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 130.81 57.15 0)
+			(at 130.81 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2097,7 +2531,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 125.73 57.15 0)
+			(at 125.73 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2106,7 +2540,7 @@
 			)
 		)
 		(property "Mouser Price/Inventory" ""
-			(at 125.73 57.15 0)
+			(at 125.73 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2128,7 +2562,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 73.66 69.85 0)
+		(at 73.66 107.95 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2136,7 +2570,7 @@
 		(dnp no)
 		(uuid "4b9f3b18-2265-4da2-bc8a-91d09dae3651")
 		(property "Reference" "#PWR0501"
-			(at 73.66 76.2 0)
+			(at 73.66 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2145,7 +2579,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 77.724 71.628 0)
+			(at 77.724 109.728 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2153,7 +2587,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 69.85 0)
+			(at 73.66 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2162,7 +2596,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 69.85 0)
+			(at 73.66 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2171,7 +2605,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 73.66 69.85 0)
+			(at 73.66 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2193,7 +2627,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 93.98 45.72 0)
+		(at 93.98 83.82 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2201,7 +2635,7 @@
 		(dnp no)
 		(uuid "4df86dee-880e-4bcf-a492-1ed886263839")
 		(property "Reference" "#PWR0507"
-			(at 93.98 49.53 0)
+			(at 93.98 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2210,7 +2644,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 97.79 44.196 0)
+			(at 97.79 82.296 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2218,7 +2652,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 93.98 45.72 0)
+			(at 93.98 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2227,7 +2661,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 93.98 45.72 0)
+			(at 93.98 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2236,7 +2670,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 93.98 45.72 0)
+			(at 93.98 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2258,7 +2692,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 115.57 64.77 180)
+		(at 115.57 102.87 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2267,7 +2701,7 @@
 		(fields_autoplaced yes)
 		(uuid "5a5a7f80-0243-4eb7-a6c1-e1eee6e2d30f")
 		(property "Reference" "R504"
-			(at 118.11 63.4999 0)
+			(at 118.11 101.5999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2276,7 +2710,7 @@
 			)
 		)
 		(property "Value" "47k"
-			(at 118.11 66.0399 0)
+			(at 118.11 104.1399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2285,7 +2719,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 117.348 64.77 90)
+			(at 117.348 102.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2294,7 +2728,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 115.57 64.77 0)
+			(at 115.57 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2303,7 +2737,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 115.57 64.77 0)
+			(at 115.57 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2312,7 +2746,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/YAGEO/RC0805JR-7W47KL?qs=tggtontpCXNoMeTIW8%252BKHA%3D%3D"
-			(at 115.57 64.77 0)
+			(at 115.57 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2337,7 +2771,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 88.9 46.99 0)
+		(at 88.9 85.09 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2346,7 +2780,7 @@
 		(fields_autoplaced yes)
 		(uuid "809fd077-21db-4fd5-b82b-5ffc07de9604")
 		(property "Reference" "#FLG0501"
-			(at 88.9 45.085 0)
+			(at 88.9 83.185 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2355,7 +2789,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 88.9 41.91 0)
+			(at 88.9 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2364,7 +2798,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 88.9 46.99 0)
+			(at 88.9 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2373,7 +2807,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 88.9 46.99 0)
+			(at 88.9 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2382,7 +2816,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 88.9 46.99 0)
+			(at 88.9 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2404,7 +2838,7 @@
 	)
 	(symbol
 		(lib_id "ECE445L:C")
-		(at 73.66 62.23 180)
+		(at 73.66 100.33 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2413,7 +2847,7 @@
 		(fields_autoplaced yes)
 		(uuid "896fb330-c089-49e3-b98f-e9c861b49b2a")
 		(property "Reference" "C505"
-			(at 77.47 60.9599 0)
+			(at 77.47 99.0599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2422,7 +2856,7 @@
 			)
 		)
 		(property "Value" "10n"
-			(at 77.47 63.4999 0)
+			(at 77.47 101.5999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2431,7 +2865,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 72.6948 58.42 0)
+			(at 72.6948 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2440,7 +2874,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 73.66 62.23 0)
+			(at 73.66 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2449,7 +2883,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 73.66 62.23 0)
+			(at 73.66 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2458,7 +2892,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/Samsung-Electro-Mechanics/CL21A106KPFNNNE?qs=sGAEpiMZZMt7gvpyg0xT8jBAVP%252BdkPhuUJvUBe19zr8%3D"
-			(at 73.66 62.23 0)
+			(at 73.66 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2619,7 +3053,7 @@
 	)
 	(symbol
 		(lib_id "SamacSys_Parts:trs_audio_jack")
-		(at 135.89 59.69 0)
+		(at 135.89 97.79 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2628,7 +3062,7 @@
 		(fields_autoplaced yes)
 		(uuid "97b35c21-3950-40c1-a5cb-b602b879e0b0")
 		(property "Reference" "J502"
-			(at 143.51 59.0549 0)
+			(at 143.51 97.1549 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2637,7 +3071,7 @@
 			)
 		)
 		(property "Value" "trs_audio_jack"
-			(at 143.51 61.5949 0)
+			(at 143.51 99.6949 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2646,7 +3080,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 135.89 59.69 0)
+			(at 135.89 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2655,7 +3089,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 135.89 59.69 0)
+			(at 135.89 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2664,7 +3098,7 @@
 			)
 		)
 		(property "Description" "Audio Jack, 3 Poles (Stereo / TRS)"
-			(at 135.89 59.69 0)
+			(at 135.89 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2692,7 +3126,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 93.98 68.58 0)
+		(at 93.98 106.68 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2700,7 +3134,7 @@
 		(dnp no)
 		(uuid "97c65216-753c-4f56-bbb6-a4ce26aab010")
 		(property "Reference" "#PWR0508"
-			(at 93.98 74.93 0)
+			(at 93.98 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2709,7 +3143,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 98.044 70.866 0)
+			(at 98.044 108.966 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2717,7 +3151,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 93.98 68.58 0)
+			(at 93.98 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2726,7 +3160,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 93.98 68.58 0)
+			(at 93.98 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2735,7 +3169,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 93.98 68.58 0)
+			(at 93.98 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2757,7 +3191,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 64.77 58.42 0)
+		(at 64.77 96.52 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -2765,7 +3199,7 @@
 		(dnp no)
 		(uuid "9be7db3b-823f-4677-affd-4a6e3161bc14")
 		(property "Reference" "TP501"
-			(at 58.166 51.562 0)
+			(at 58.166 89.662 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2774,7 +3208,7 @@
 			)
 		)
 		(property "Value" "DAC"
-			(at 59.182 53.848 0)
+			(at 59.182 91.948 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2783,7 +3217,7 @@
 			)
 		)
 		(property "Footprint" "SamacSys_Parts:bettertestpoint2"
-			(at 69.85 58.42 0)
+			(at 69.85 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2792,7 +3226,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 69.85 58.42 0)
+			(at 69.85 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2801,7 +3235,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 64.77 58.42 0)
+			(at 64.77 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2810,7 +3244,7 @@
 			)
 		)
 		(property "Mouser Price/Inventory" ""
-			(at 64.77 58.42 0)
+			(at 64.77 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2832,7 +3266,7 @@
 	)
 	(symbol
 		(lib_id "ECE445L:C")
-		(at 86.36 50.8 0)
+		(at 86.36 88.9 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2840,7 +3274,7 @@
 		(dnp no)
 		(uuid "b379fd05-6312-4005-bda1-32e0efc48841")
 		(property "Reference" "C507"
-			(at 81.534 46.736 0)
+			(at 81.534 84.836 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2848,7 +3282,7 @@
 			)
 		)
 		(property "Value" "1u"
-			(at 81.28 48.768 0)
+			(at 81.28 86.868 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2856,7 +3290,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 87.3252 54.61 0)
+			(at 87.3252 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2865,7 +3299,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 86.36 50.8 0)
+			(at 86.36 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2874,7 +3308,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 86.36 50.8 0)
+			(at 86.36 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2883,7 +3317,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/Samsung-Electro-Mechanics/CL21B105KPFNNNE?qs=349EhDEZ59rb3V94UrmRdQ%3D%3D"
-			(at 86.36 50.8 0)
+			(at 86.36 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2907,8 +3341,170 @@
 		)
 	)
 	(symbol
+		(lib_id "SamacSys_Parts:PCM1780DBQR")
+		(at 74.93 34.29 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c2cef6a8-a621-4050-b234-28500dd75799")
+		(property "Reference" "IC501"
+			(at 96.52 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PCM1780DBQR"
+			(at 96.52 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SOP64P600X175-16N"
+			(at 114.3 129.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/gpn/PCM1780"
+			(at 114.3 229.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "106dB SNR Stereo DAC (S/W Control)"
+			(at 74.93 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "1.75"
+			(at 114.3 429.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "595-PCM1780DBQR"
+			(at 114.3 529.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/PCM1780DBQR?qs=wgAEGBTxy7nuCOVzhPg7nw%3D%3D"
+			(at 114.3 629.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Texas Instruments"
+			(at 114.3 729.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "PCM1780DBQR"
+			(at 114.3 829.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "14"
+			(uuid "3a462bd3-0258-4b38-ae5b-e97b8e9dc5da")
+		)
+		(pin "10"
+			(uuid "37adc19b-eec7-4f42-8cfa-28280f84e934")
+		)
+		(pin "11"
+			(uuid "495eb551-39b9-4b99-afec-a7c8f93e021f")
+		)
+		(pin "16"
+			(uuid "df762ff4-5507-4815-8f33-984398964f8d")
+		)
+		(pin "1"
+			(uuid "0a3b766b-c451-4d2e-a719-fb64811851db")
+		)
+		(pin "13"
+			(uuid "a54e8801-08f1-4548-b02e-a43709ddcb2b")
+		)
+		(pin "4"
+			(uuid "441c3aff-6a6a-4346-a567-a1d67e11fb0a")
+		)
+		(pin "7"
+			(uuid "56b8090e-8f96-44a4-a8bc-c97f589bca28")
+		)
+		(pin "6"
+			(uuid "8e67df9f-d74b-4d13-b0de-ba2f7041291e")
+		)
+		(pin "2"
+			(uuid "d764ac1a-821a-4c94-aedf-e5d7faf51c76")
+		)
+		(pin "12"
+			(uuid "51f5ce5d-3059-4d1f-8724-25953f43df3a")
+		)
+		(pin "8"
+			(uuid "2d849583-23f0-47a0-bad0-08ac692c71ea")
+		)
+		(pin "9"
+			(uuid "91d9d8bd-937b-4d43-a383-85beaae77257")
+		)
+		(pin "15"
+			(uuid "0cc670fe-c014-4d79-9d9b-8f5254e6a025")
+		)
+		(pin "3"
+			(uuid "55458ee3-df34-4332-95c8-ad9b315b93c1")
+		)
+		(pin "5"
+			(uuid "ccb38f3e-2180-405b-b79c-50469a468f6d")
+		)
+		(instances
+			(project ""
+				(path "/5332464e-0c3a-49d2-8fb5-731d0e42ee15/9623dd3b-8db3-4512-88be-dd962a96388d"
+					(reference "IC501")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
-		(at 123.19 57.15 0)
+		(at 123.19 95.25 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2916,7 +3512,7 @@
 		(dnp no)
 		(uuid "c82568eb-af74-49a5-bf8c-f51467b5d031")
 		(property "Reference" "#PWR0503"
-			(at 123.19 63.5 0)
+			(at 123.19 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2925,7 +3521,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 119.126 57.404 0)
+			(at 119.126 95.504 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2933,7 +3529,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 123.19 57.15 0)
+			(at 123.19 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2942,7 +3538,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 123.19 57.15 0)
+			(at 123.19 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2951,7 +3547,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 123.19 57.15 0)
+			(at 123.19 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2973,7 +3569,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 128.27 60.96 180)
+		(at 128.27 99.06 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -2981,7 +3577,7 @@
 		(dnp no)
 		(uuid "cb531be6-8900-46a1-807f-f647769e9f08")
 		(property "Reference" "TP504"
-			(at 131.064 68.326 0)
+			(at 131.064 106.426 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2990,7 +3586,7 @@
 			)
 		)
 		(property "Value" "RT"
-			(at 128.778 66.04 0)
+			(at 128.778 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2999,7 +3595,7 @@
 			)
 		)
 		(property "Footprint" "SamacSys_Parts:bettertestpoint2"
-			(at 123.19 60.96 0)
+			(at 123.19 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3008,7 +3604,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 123.19 60.96 0)
+			(at 123.19 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3017,7 +3613,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 128.27 60.96 0)
+			(at 128.27 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3026,7 +3622,7 @@
 			)
 		)
 		(property "Mouser Price/Inventory" ""
-			(at 128.27 60.96 0)
+			(at 128.27 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3048,7 +3644,7 @@
 	)
 	(symbol
 		(lib_id "ECE445L:C")
-		(at 107.95 60.96 270)
+		(at 107.95 99.06 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3056,7 +3652,7 @@
 		(dnp no)
 		(uuid "e810a8f8-ea57-48c3-940e-46e709bbac22")
 		(property "Reference" "C506"
-			(at 107.95 64.77 90)
+			(at 107.95 102.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3064,7 +3660,7 @@
 			)
 		)
 		(property "Value" "3u3"
-			(at 107.95 67.31 90)
+			(at 107.95 105.41 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3072,7 +3668,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 104.14 61.9252 0)
+			(at 104.14 100.0252 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3081,7 +3677,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 107.95 60.96 0)
+			(at 107.95 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3090,7 +3686,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 107.95 60.96 0)
+			(at 107.95 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3099,7 +3695,7 @@
 			)
 		)
 		(property "Mouser Stock/Price" "https://www.mouser.com/ProductDetail/TDK/C2012X7R1V335K125AC?qs=U4gclJHtfSj5XsYUBUaOrg%3D%3D"
-			(at 107.95 60.96 90)
+			(at 107.95 99.06 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3108,7 +3704,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/TDK/C2012X7R1V335K125AC?qs=U4gclJHtfSj5XsYUBUaOrg%3D%3D"
-			(at 107.95 60.96 90)
+			(at 107.95 99.06 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3133,7 +3729,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 115.57 69.85 0)
+		(at 115.57 107.95 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3141,7 +3737,7 @@
 		(dnp no)
 		(uuid "eb0375e2-4c3c-4a5f-a6c0-da2398fbfd4f")
 		(property "Reference" "#PWR0509"
-			(at 115.57 76.2 0)
+			(at 115.57 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3150,7 +3746,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 119.634 71.628 0)
+			(at 119.634 109.728 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3158,7 +3754,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 115.57 69.85 0)
+			(at 115.57 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3167,7 +3763,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 115.57 69.85 0)
+			(at 115.57 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3176,7 +3772,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 115.57 69.85 0)
+			(at 115.57 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3198,7 +3794,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 69.85 58.42 90)
+		(at 69.85 96.52 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3207,7 +3803,7 @@
 		(fields_autoplaced yes)
 		(uuid "f64b0619-05b6-44c0-85d7-29837a634a15")
 		(property "Reference" "R503"
-			(at 69.85 52.07 90)
+			(at 69.85 90.17 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3215,7 +3811,7 @@
 			)
 		)
 		(property "Value" "787"
-			(at 69.85 54.61 90)
+			(at 69.85 92.71 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3223,7 +3819,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 69.85 60.198 90)
+			(at 69.85 98.298 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3232,7 +3828,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 69.85 58.42 0)
+			(at 69.85 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3241,7 +3837,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 69.85 58.42 0)
+			(at 69.85 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3250,7 +3846,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/Vishay/CRCW0805787RFKEA?qs=Lu3mkJd%252BoBHFo%2FQlWc6ASQ%3D%3D"
-			(at 69.85 58.42 90)
+			(at 69.85 96.52 90)
 			(effects
 				(font
 					(size 1.27 1.27)
