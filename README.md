@@ -1,3 +1,6 @@
+
+
+
 <div align="center">
 Imagiano | Digital Synthesizer Project
 </div>
@@ -23,7 +26,7 @@ Preview and save your changes. The video will now appear as an inline player wit
 Here's a clip of our project (Rev A) in action:    
 test (replace this): 
 <p align="center">
-  <video src="https://github.com/user-attachments/assets/3ec2cc7f-7ef4-4a84-a22f-b311950bbfaf" width="300" controls>
+  <video src="https://github.com/user-attachments/assets/4a25433e-0272-4781-a5fd-c7f0d65e424b" width="300" controls>
   </video>
   <br>
   <em>(Note: Please enable audio for the full demonstration)</em>
