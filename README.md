@@ -17,11 +17,11 @@ Edit your README.md on GitHub.com.
 Drag and drop your video file (up to 100MB) directly into the editor pane.
 Wait for the upload to complete; GitHub will automatically generate a specialized Markdown link (e.g., https://github.com...).
 Preview and save your changes. The video will now appear as an inline player with sound controls.  -->
-Here's a clip of our project (Rev A) in action [@jeffchang0](https://github.com/jeffchang0):
+Here's a clip of our project (Rev A) in action, credit to [@jeffchang0](https://github.com/jeffchang0):
 <p align="center">
   <video src="https://github.com/user-attachments/assets/4a25433e-0272-4781-a5fd-c7f0d65e424b" width="300" controls>
   </video>
-  <em><b>(Note: Please enable audio and applaud the camerawork for the full demonstration)</em></b>
+  <em><b>(Note: Please enable audio and applaud the mouth camerawork for the full demonstration)</em></b>
 </p>
 
 Our digital piano consists of    
@@ -50,7 +50,6 @@ After some thinking and debate, we came down to this diagram for our overall sys
 
 We opted to have a main controller board daisy-chained with a series of peripheral boards. This main board would also be connected to user interfaces like an LCD, digital rotary encoders, and an addressable LED strip.        
 
-TODO: fix text rendering on some of these lol
 <table>
   <tr>
     <td><img src="docs/images/crude_system_diagram.png" width="600" alt="Periph Schematic Rev A"></td>
@@ -60,10 +59,9 @@ TODO: fix text rendering on some of these lol
       <em><b></b> System Plan Diagram</em>
     </td>
   </tr>
-</table>
+</table>  
 Each peripheral board would have an array of linear Hall effect sensors to determine key position, with 12 of these sensors to form an octave. 5 of these peripheral boards allowed us to cover a good range of pitches!  
        
-TODO: fix hall sensor 1 duplicate
 <table>
   <tr>
     <td><img src="docs/images/crude_peripheral_diagram.png" width="600" alt="Periph Schematic Rev A"></td>
@@ -93,18 +91,6 @@ Once we had picked out all our parts, we drew out the schematic (and all of the 
   </tr>
 </table>
 
-TODO: talk about spi vs i2c bus
-
-TODO: talk about why we put an LDO on every peripheral board
-
-TODO: talk about why we have leds on select lines
-
-TODO: talk about why we incorporated a launchpad into our design versus just bare MCU
-
-TODO: talk about why we didnt create our own amp/speaker circuit and decided to just use line output to an external speaker
-
-TODO: talk about through hole components
-
 After verifying the schematic, we moved onto laying out the PCB itself:
 <table>
   <tr>
@@ -130,11 +116,31 @@ After verifying the schematic, we moved onto laying out the PCB itself:
   </tr>
 </table>
 
-TODO: talk abt limitation to 2 layers due to budget constraints, also 4 layers overkill since low speed signals
 
-TODO: talk about connectors between peripheral boards
+### Design Choices
+#### Why did you choose I2C over SPI for the wired peripheral board bus?
+- At first we were going to go with an SPI bus connected as a "star topology" vs daisy-chained. We ultimately went with I2C to reduce the amount of GPIO usage and wires (i.e. SPI CS line for every peripheral board -> just the I2C SDA & SCL). We did consider the possible issue of bus capacitance since our bus would be almost a meter long (!!), but we just accepted our fate (reduce I2C speed if necessary).  
 
-TODO: explain mess on speaker output
+#### Why is there an LDO on every peripheral board?
+- Instead of routing 3V3 all across each peripheral board, we opted to route 5V and have local 3V3 LDOs. This removed any possibility of power supply noise within our sensitive analog Hall sensors.  
+
+#### Why do we have LEDs on the analog mux select lines?
+- For fun! It's also nice to have a visual indicator when debugging (i.e. which sensor index is being sampled right at this moment when I pause?)  
+
+#### Why did you use an MSPM0G3507 launchpad/devkit instead of having two discrete MCUs?
+- Since this was a class, we were required to have a fallback plan in case our discrete MCU did not work for any reason.  
+
+#### Why did you use a mix of through hole components (LDO, capacitors) or other non-ideal components (speaker amp)?
+- Since this was a class, we were restricted to a very stringent budget ($60!) for the entire project. The through hole components and speaker amp were considered "free" since we could get them from a university equipment desk.    
+
+#### Why did you use funny protoboards as connectors instead of using right angle connectors?
+- Same thing as above. Right angle connectors would be the way to go, but the budget limitations said otherwise.    
+  
+#### Why did you choose a 2 layer PCB?
+- 4 layers would be overkill for this project since board density wasn't crazy. This is also a school project, so we didn't need to worry about EMC regulations (RIP ground plane) and had to worry more about the budget.
+
+#### What happened for your speaker output circuit?
+- At the last minute (literally like an hour before designs were due) we realized our original amp design could potentially not work (slipped through team and TA design review), so we slapped on a backup circuit (simple voltage buffer) on the other side. The particular issue was our questionable adaptation of a (free!) differential amplifier for a single ended application
 
 ##  4. <a name='MechanicalDesign'></a>Mechanical Design
 
@@ -165,9 +171,9 @@ talk about what modules we were to use, drivers we had to make, coding practices
 
 ##  7. <a name='RevACredits'></a>Rev A Credits
 [@jeffchang0](https://github.com/jeffchang0) - Mechanical design/fabrication    
-[@MorrisYLin](https://github.com/MorrisYLin) - DAC firmware, DSP firmware, PCB design    
-[@zaarabilal](https://github.com/zaarabilal) - I2C ADC driver, ST7735/KY-040 encoder drivers, Mechanical design    
-[@tguyenn](https://github.com/tguyenn) - PCB design/assembly, WS2812B LED driver, Documentation    
+[@MorrisYLin](https://github.com/MorrisYLin) - DAC driver/firmware, DSP firmware, PCB design/validation    
+[@zaarabilal](https://github.com/zaarabilal) - I2C ADC driver, ST7735/KY-040 encoder drivers/firmware, Mechanical design    
+[@tguyenn](https://github.com/tguyenn) - PCB design/validation/assembly, WS2812B LED driver/firmware, Documentation
 
 ##  8. <a name='RevBmotivationandfeatures'></a>Rev B motivation and features
 Due to time and budget restrictions, we weren't able to cleanly implement all of our features. We didn't like that, so we decided to spin a new revision of the main board to add and fix some features.
