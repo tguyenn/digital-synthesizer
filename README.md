@@ -1,9 +1,4 @@
-
-
-
-<div align="center">
-Imagiano | Digital Synthesizer Project
-</div>
+# Imagiano | Digital Synthesizer Project
 
 ## $$\color{#CC5500} \text{UT ECE445L Competition Project}$$
 
@@ -17,19 +12,16 @@ Brought to you by...
 
 We decided to build a digital synthesizer/piano for our final project in UT Austin's Embedded Lab Class! We thought a piano was a great idea since we all love music, and a digital synthesizer presented a good deal of electrical, mechanical, and programming challenges.
 
-TODO: insert picture of finished product? embed video of jegery playing pinoa
 <!-- The most reliable method is to use the GitHub web interface to generate a hosted asset link: 
 Edit your README.md on GitHub.com.
 Drag and drop your video file (up to 100MB) directly into the editor pane.
 Wait for the upload to complete; GitHub will automatically generate a specialized Markdown link (e.g., https://github.com...).
 Preview and save your changes. The video will now appear as an inline player with sound controls.  -->
-Here's a clip of our project (Rev A) in action:    
-test (replace this): 
+Here's a clip of our project (Rev A) in action [@jeffchang0](https://github.com/jeffchang0):
 <p align="center">
   <video src="https://github.com/user-attachments/assets/4a25433e-0272-4781-a5fd-c7f0d65e424b" width="300" controls>
   </video>
-  <br>
-  <em>(Note: Please enable audio for the full demonstration)</em>
+  <em><b>(Note: Please enable audio and applaud the camerawork for the full demonstration)</em></b>
 </p>
 
 Our digital piano consists of    
