@@ -140,7 +140,7 @@ After verifying the schematic, we moved onto laying out the PCB itself:
 - 4 layers would be overkill for this project since board density wasn't crazy. This was also a school project, so we didn't need to worry about EMC regulations (RIP ground plane) and had to worry more about the budget.
 
 #### What happened for your speaker output circuit?
-- At the last minute (literally like an hour before designs were due) we realized our original amp design could potentially not work (slipped through team and TA design review), so we slapped on a backup circuit (simple voltage buffer) on the other side. The particular issue was our questionable adaptation of a (free!) differential amplifier for a single ended application
+- At the last minute (literally like an hour before designs were due) we realized our original amp design could potentially not work (slipped through team and TA design review), so we slapped on a backup circuit (simple voltage buffer) on the other side. The particular issue was our questionable adaptation of a (free!) differential amplifier for a single ended application.
 
 ##  4. <a name='MechanicalDesign'></a>Mechanical Design
 
@@ -160,27 +160,31 @@ talk about what modules we were to use, drivers we had to make, coding practices
 ### DSP
 ### LCD/Encoders
 ### LED Strip
-To implement the WS2812B serial protocol, we used TimerG7 and the DMA controller to achieve precise PWM without CPU intervention. By sourcing the timer from an 80 MHz clock, a fixed period of 1.25 µs (100 clock cycles) was defined to match the standard WS2812B bit duration. The critical logic relied on the dynamic adjustment of the duty cycle for each bit, as TimerG7 was configured to publish a Generic Event 0 to Event Channel 1 every time the counter reached its reload point. The DMA controller, acting as a subscriber to this channel, executed a Repeat Single Transfer upon each trigger. This transfer moved a `uint16_t` duty cycle value from the `serialLEDArr` buffer directly into the TimerG7 Capture Compare Register (CC01)
-
+- WS2812B LED Strip off of [Amazon](https://www.amazon.com/gp/product/B088BPGMXB/ref=ox_sc_act_title_1?smid=A35UAT07QG3EC6&th=1)
+- We used PWM via the TimerG7 and the DMA controller to create the data stream for the finicky LED strip protocol.
+  1. Defined the period the PWM waveform to be 1.25 µs and adjusted the duty cycle to transmit a `0` or `1`
+  1. TimerG7 configured to publish a `Generic Event 0` to `Event Channel 1` every time the counter reached its reload point
+  1. The DMA controller subscribed to this channel executed a Repeat Single Transfer upon each trigger to move a duty cycle value from a buffer into the TimerG7 CC01 register
 
 ##  6. <a name='ImplementationChallenges'></a>Implementation Challenges
-- jumpers!
-    - During board bringup, we could not get the I2C module to output from our MSPM0 devkit pins. This was especially unfortunate and took us two hours to realize we had to remove some configuration jumpers on the devkit.
+- There were a few small (but important!) details that slipped through PCB design review, namely
+    - Pinout for onboard MSPM0 MCU footprint wrong on one rail, so we had to bluewire many pins for the onboard MCU to work
+    - Pinout for dc barrel jack was also wrong (ground plane became a 5V plane), so had to desolder and use a flying screw terminal setup
+    - Pulled reset pin to the wrong polarity, so had to cut a trace
+- Jumpers hell
+    - During testing, we could not get the I2C module to output from our MSPM0 devkit pins. This was especially unfortunate and took us two hours to realize we had to remove some configuration jumpers on the devkit.
 - DSP calculations took so much CPU time that no other peripherals besides ADC sampling worked
-- never trust anything. everything is a lie
-    - pinout for onboard MSPM0 MCU was wrong on one rail, so we had to bluewire many pins
-    - pinout for dc barrel jack was also wrong, so had to desolder and use a flying screw terminal setup
-    - pulled reset pin to the wrong polarity, so had to cut a trace
-- Competition restricted us to writing everything without using TI's beloved SysConfig, so we had to figure out some module initializations by ourselves (datasheet + TRM)
+- Competition restricted us to writing everything without using TI's beloved SysConfig, so we had to figure out some module initializations by ourselves using the datasheet + TRM
 - BOM management
-- magnet strength
-    - magnet polarity pulling adjacent keys
-    - hall sensor voltage swing amplitude not big enough
+    - Sticking to the $60 budget for the entire project was tricky, and we had to cut corners wherever possible
+- Magnets in the keys
+    - We initially tried putting all the key magnets facing the same direction, but they kept interfering with each other (pressing one key also pressed adjacent keys)
+    - We had to alternate the magnet polarity and fix in software (linear Hall sensors output voltage swinging in the opposite direction)
 
 ##  7. <a name='RevACredits'></a>Rev A Credits
 [@jeffchang0](https://github.com/jeffchang0) - Mechanical design/fabrication    
 [@MorrisYLin](https://github.com/MorrisYLin) - DAC driver/firmware, DSP firmware, PCB design/validation    
-[@zaarabilal](https://github.com/zaarabilal) - I2C ADC driver, ST7735/KY-040 encoder drivers/firmware, Mechanical design    
+[@zaarabilal](https://github.com/zaarabilal) - I2C ADC driver/firmware, LCD/digital encoder drivers/firmware, Mechanical design    
 [@tguyenn](https://github.com/tguyenn) - PCB design/validation/assembly, WS2812B LED driver/firmware, Documentation
 
 ##  8. <a name='RevBmotivationandfeatures'></a>Rev B motivation and features
@@ -189,15 +193,16 @@ Due to time and budget restrictions, we weren't able to cleanly implement all of
 Some of these features include:
 - Replaced MSPM0G3507 with dual core microcontroller (RP2040) to properly handle the math compute load, sound output, LED strip output, and user interface
   - Dual-core instead of two discrete MCUs because flashing twice and maintaining two codebases is annoying
+- 4 layer PCB
 - Removed backpack devkit
-  - Escape jumper hell
-- SD card for loading in graphics and differnet preset sound configs??
+  - Escape potential jumper hell
 - Cleaned audio output circuit
 - Replaced all through-hole with SMD components
-- Replace all LDO with switching regulator
+- Replace main board LDO with switching regulator for fun
 - Black soldermask + ENIG PCBs
-- added ESD protection ???
 - Silkscreen art!
+- added ESD protection ???
+- SD card for loading in graphics and differnet preset sound configs??
 
 <table>
   <tr>
