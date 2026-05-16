@@ -49,7 +49,7 @@ We opted to have a main controller board daisy-chained with a series of peripher
 
 <table>
   <tr>
-    <td><img src="docs/images/crude_system_diagram.png" width="600" alt="Periph Schematic Rev A"></td>
+    <td><img src="docs/images/crude_system_diagram.png" width="600" alt="system plan diagram"></td>
   </tr>
   <tr>
     <td colspan="1" align="center">
@@ -61,7 +61,7 @@ Each peripheral board would have an array of linear Hall effect sensors to deter
        
 <table>
   <tr>
-    <td><img src="docs/images/crude_peripheral_diagram.png" width="600" alt="Periph Schematic Rev A"></td>
+    <td><img src="docs/images/crude_peripheral_diagram.png" width="400" alt="periph board diagram"></td>
   </tr>
   <tr>
     <td colspan="1" align="center">
@@ -69,6 +69,20 @@ Each peripheral board would have an array of linear Hall effect sensors to deter
     </td>
   </tr>
 </table>
+
+To give some insight into what this came to be, here is a picture of our daisy-chained peripheral boards (sharpie for scale):  
+<table>
+  <tr>
+    <td><img src="docs/images/long_pcb.jpg" width="600" alt="long pcb"></td>
+  </tr>
+  <tr>
+    <td colspan="1" align="center">
+      <em><b></b> Extra Extra Long PCB</em>
+    </td>
+  </tr>
+</table>
+  
+
 
 
 ## Electrical Design
