@@ -29,16 +29,16 @@ Here's a clip of our project (Rev A) in action, credit to [@jeffchang0](https://
   </video>
 </p>
 
-##  1. <a name='TableofContents'></a>Table of Contents
-1. [System Design](#SystemDesign)
-1. [Electrical Design](#ElectricalDesign)
-1. [Mechanical Design](#MechanicalDesign)
-1. [Firmware Design](#FirmwareDesign)
-1. [Implementation Challenges](#ImplementationChallenges)
-1. [Rev A Credits](#RevACredits)
-1. [Rev B motivation and features](#RevBmotivationandfeatures)
+## Table of Contents
+1. [System Design](#system-design)
+1. [Electrical Design](#electrical-design)
+1. [Mechanical Design](#mechanical-design)
+1. [Firmware Design](#firmware-design)
+1. [Implementation Challenges](#implementation-challenges)
+1. [Rev A Credits](#rev-a-credits)
+1. [Rev B Motivation and Features](#rev-b-motivation-and-features)
 
-##  2. <a name='SystemDesign'></a>System Design
+## System Design
 Figuring out requirements is by far the most important part of a project! Of course you have to know what you are building before you build it :)
 
 We knew we wanted to make a piano of a larger scale, so we had to figure out how to seamlessly connect a lot of keys together.
@@ -71,7 +71,7 @@ Each peripheral board would have an array of linear Hall effect sensors to deter
 </table>
 
 
-##  3. <a name='ElectricalDesign'></a>Electrical Design
+## Electrical Design
 Once we had planned out the high-level details of the project, it was time to figure out what electrical connections needed to be made. First, it was time to go window shopping and datasheet diving on Mouser to figure out what we were even working with.
 
 Once we had picked out all our parts, we drew out the schematic (and all of the relevant subsheets):    
@@ -142,7 +142,7 @@ After verifying the schematic, we moved onto laying out the PCB itself:
 #### What happened for your speaker output circuit?
 - At the last minute (literally like an hour before designs were due) we realized our original amp design could potentially not work (slipped through team and TA design review), so we slapped on a backup circuit (simple voltage buffer) on the other side. The particular issue was our questionable adaptation of a (free!) differential amplifier for a single ended application.
 
-##  4. <a name='MechanicalDesign'></a>Mechanical Design
+## Mechanical Design
 
 TODO: @jeffchang0 cad models pictures?
 
@@ -151,7 +151,7 @@ TODO: @jeffchang0 mechanical design challenges
 TODO: talk about mass manufacturing of keys
     - shoutout "tiw"
 
-##  5. <a name='FirmwareDesign'></a>Firmware Design
+## Firmware Design
 
 TODO: @MorrisYLin @zaarabilal pls
 talk about what modules we were to use, drivers we had to make, coding practices, etc
@@ -166,28 +166,29 @@ talk about what modules we were to use, drivers we had to make, coding practices
   1. TimerG7 configured to publish a `Generic Event 0` to `Event Channel 1` every time the counter reached its reload point
   1. The DMA controller subscribed to this channel executed a Repeat Single Transfer upon each trigger to move a duty cycle value from a buffer into the TimerG7 CC01 register
 
-##  6. <a name='ImplementationChallenges'></a>Implementation Challenges
+## Implementation Challenges
 - There were a few small (but important!) details that slipped through PCB design review, namely
-    - Pinout for onboard MSPM0 MCU footprint wrong on one rail, so we had to bluewire many pins for the onboard MCU to work
+    - Pinout for onboard MSPM0 MCU footprint was flipped on one rail, so many pins had to be bluewired for the onboard MCU to work
     - Pinout for dc barrel jack was also wrong (ground plane became a 5V plane), so had to desolder and use a flying screw terminal setup
-    - Pulled reset pin to the wrong polarity, so had to cut a trace
-- Jumpers hell
+    - Pulled reset pin to the wrong polarity (nReset to ground), so we had to cut the trace and let the internal pullup do its thing
+- Jumper pains
     - During testing, we could not get the I2C module to output from our MSPM0 devkit pins. This was especially unfortunate and took us two hours to realize we had to remove some configuration jumpers on the devkit.
-- DSP calculations took so much CPU time that no other peripherals besides ADC sampling worked
-- Competition restricted us to writing everything without using TI's beloved SysConfig, so we had to figure out some module initializations by ourselves using the datasheet + TRM
-- BOM management
-    - Sticking to the $60 budget for the entire project was tricky, and we had to cut corners wherever possible
 - Magnets in the keys
     - We initially tried putting all the key magnets facing the same direction, but they kept interfering with each other (pressing one key also pressed adjacent keys)
     - We had to alternate the magnet polarity and fix in software (linear Hall sensors output voltage swinging in the opposite direction)
+- DSP calculations took so much CPU time that no other peripherals besides ADC sampling worked
+    - Had to reduce scope of project (removed user interface) to meet the deadline with a working product
+- Competition restricted us to writing everything without using TI's beloved SysConfig, so we had to figure out some module initializations by ourselves using the datasheet + TRM
+- BOM management
+    - Sticking to the $60 budget for the entire project was tricky, and we had to cut corners wherever possible
 
-##  7. <a name='RevACredits'></a>Rev A Credits
+## Rev A Credits
 [@jeffchang0](https://github.com/jeffchang0) - Mechanical design/fabrication    
 [@MorrisYLin](https://github.com/MorrisYLin) - DAC driver/firmware, DSP firmware, PCB design/validation    
 [@zaarabilal](https://github.com/zaarabilal) - I2C ADC driver/firmware, LCD/digital encoder drivers/firmware, Mechanical design    
 [@tguyenn](https://github.com/tguyenn) - PCB design/validation/assembly, WS2812B LED driver/firmware, Documentation
 
-##  8. <a name='RevBmotivationandfeatures'></a>Rev B motivation and features
+## Rev B Motivation and Features
 Due to time and budget restrictions, we weren't able to cleanly implement all of our features. We didn't like that, so we decided to spin a new revision of the main board to add and fix some features.
 
 Some of these features include:
@@ -202,7 +203,6 @@ Some of these features include:
 - Black soldermask + ENIG PCBs
 - Silkscreen art!
 - added ESD protection ???
-- SD card for loading in graphics and differnet preset sound configs??
 
 <table>
   <tr>

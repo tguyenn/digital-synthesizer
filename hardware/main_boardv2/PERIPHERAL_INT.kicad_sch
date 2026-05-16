@@ -2046,6 +2046,16 @@
 		)
 		(uuid "47278420-7a8f-4612-ba8d-92c32284ddf9")
 	)
+	(text "why do we want this?\n\ndoes this really allow us to simply DMA everything?\nif we are literally toggling GPIOs, then wouldnt it make\nmore sense to just do this with the CPU?\n\nif we go with it, TODO: check what I2C bus speed IC requires"
+		(exclude_from_sim no)
+		(at 91.948 48.768 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+		)
+		(uuid "528c08c4-d689-45be-9115-bc613d38570a")
+	)
 	(text "GRN"
 		(exclude_from_sim no)
 		(at 163.83 76.962 0)
@@ -2066,9 +2076,9 @@
 		)
 		(uuid "7bfd7cbd-0516-47de-ad2a-35f403f8cac3")
 	)
-	(text "I2C GPIO Expander"
+	(text "I2C → GPIO Expander"
 		(exclude_from_sim no)
-		(at 68.072 14.732 0)
+		(at 69.342 14.478 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2160,16 +2170,7 @@
 		(uuid "d653ca78-a177-45bb-a7d6-0b293be4ffcf")
 	)
 	(bus_entry
-		(at 22.86 21.59)
-		(size 2.54 2.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "12f961df-9ee0-489b-80fd-805f5bac432a")
-	)
-	(bus_entry
-		(at 41.91 30.48)
+		(at 33.02 30.48)
 		(size 2.54 2.54)
 		(stroke
 			(width 0)
@@ -2178,7 +2179,7 @@
 		(uuid "17bf9965-c16e-405e-8abd-a17144f1e208")
 	)
 	(bus_entry
-		(at 41.91 19.05)
+		(at 33.02 19.05)
 		(size 2.54 2.54)
 		(stroke
 			(width 0)
@@ -2187,34 +2188,7 @@
 		(uuid "7c60b7a8-34f3-48be-9d7d-24bc68c71abd")
 	)
 	(bus_entry
-		(at 22.86 19.05)
-		(size 2.54 2.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b878ae29-5cc9-4caa-a57d-863fbce1840f")
-	)
-	(bus_entry
-		(at 22.86 26.67)
-		(size 2.54 2.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c5ee97ce-32b9-46a3-907e-697d7a0ab0f2")
-	)
-	(bus_entry
-		(at 22.86 24.13)
-		(size 2.54 2.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c78834b0-16a1-4ff0-8700-391764f24915")
-	)
-	(bus_entry
-		(at 41.91 27.94)
+		(at 33.02 27.94)
 		(size 2.54 2.54)
 		(stroke
 			(width 0)
@@ -2223,7 +2197,7 @@
 		(uuid "d311a05a-b8a2-4986-9aa3-cb61e9e956c2")
 	)
 	(bus_entry
-		(at 41.91 21.59)
+		(at 33.02 21.59)
 		(size 2.54 2.54)
 		(stroke
 			(width 0)
@@ -2261,19 +2235,9 @@
 		)
 		(uuid "23b6d313-b6b8-441d-b861-8bc392f6af69")
 	)
-	(wire
-		(pts
-			(xy 25.4 29.21) (xy 26.67 29.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2cbe42bb-a210-4876-8af0-b5117d6dadeb")
-	)
 	(bus
 		(pts
-			(xy 41.91 26.67) (xy 41.91 27.94)
+			(xy 33.02 26.67) (xy 33.02 27.94)
 		)
 		(stroke
 			(width 0)
@@ -2291,16 +2255,6 @@
 		)
 		(uuid "3d026fc4-253a-4994-b7cc-6e726943eaad")
 	)
-	(bus
-		(pts
-			(xy 22.86 17.78) (xy 22.86 19.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "45917765-d9cc-4f00-a346-0ce7df88f0a2")
-	)
 	(wire
 		(pts
 			(xy 160.02 64.77) (xy 160.02 66.04)
@@ -2311,19 +2265,9 @@
 		)
 		(uuid "568c3e6f-c11f-452d-866c-616e5a5a949f")
 	)
-	(wire
-		(pts
-			(xy 25.4 21.59) (xy 26.67 21.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "599cac0e-0437-432a-8e6c-deb436b7b457")
-	)
 	(bus
 		(pts
-			(xy 41.91 17.78) (xy 41.91 19.05)
+			(xy 33.02 17.78) (xy 33.02 19.05)
 		)
 		(stroke
 			(width 0)
@@ -2341,19 +2285,9 @@
 		)
 		(uuid "7048d65b-6ab8-4106-8334-ac44988e19ad")
 	)
-	(bus
-		(pts
-			(xy 22.86 19.05) (xy 22.86 21.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8a387fa6-6afe-442c-8c0b-79f39e7f1a7d")
-	)
 	(wire
 		(pts
-			(xy 44.45 33.02) (xy 45.72 33.02)
+			(xy 35.56 33.02) (xy 36.83 33.02)
 		)
 		(stroke
 			(width 0)
@@ -2363,33 +2297,13 @@
 	)
 	(wire
 		(pts
-			(xy 25.4 26.67) (xy 26.67 26.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9d428af2-af39-4a63-bb44-fc1899dcf0ff")
-	)
-	(wire
-		(pts
-			(xy 44.45 30.48) (xy 45.72 30.48)
+			(xy 35.56 30.48) (xy 36.83 30.48)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "9dc30089-675a-49fe-b29c-c45cbff64e27")
-	)
-	(bus
-		(pts
-			(xy 22.86 24.13) (xy 22.86 26.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9fccecd3-6b44-4f6d-85bc-05f1be6faa7a")
 	)
 	(wire
 		(pts
@@ -2403,33 +2317,13 @@
 	)
 	(bus
 		(pts
-			(xy 41.91 19.05) (xy 41.91 21.59)
+			(xy 33.02 19.05) (xy 33.02 21.59)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "ab9d04fb-8163-41eb-ba73-358308211757")
-	)
-	(wire
-		(pts
-			(xy 25.4 24.13) (xy 26.67 24.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b4e58a5b-4b14-4a17-8c29-5f0dfd045dea")
-	)
-	(bus
-		(pts
-			(xy 22.86 21.59) (xy 22.86 24.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b57a1bfe-60fb-4e6e-a3ba-5535877afe60")
 	)
 	(wire
 		(pts
@@ -2453,7 +2347,7 @@
 	)
 	(bus
 		(pts
-			(xy 41.91 27.94) (xy 41.91 30.48)
+			(xy 33.02 27.94) (xy 33.02 30.48)
 		)
 		(stroke
 			(width 0)
@@ -2473,7 +2367,7 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 24.13) (xy 45.72 24.13)
+			(xy 35.56 24.13) (xy 36.83 24.13)
 		)
 		(stroke
 			(width 0)
@@ -2483,7 +2377,7 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 21.59) (xy 45.72 21.59)
+			(xy 35.56 21.59) (xy 36.83 21.59)
 		)
 		(stroke
 			(width 0)
@@ -2522,7 +2416,7 @@
 		(uuid "0c5e05a1-b2d0-4940-87c6-dbc3e9aae454")
 	)
 	(label "I2C1.SDA"
-		(at 45.72 30.48 0)
+		(at 36.83 30.48 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2541,18 +2435,8 @@
 		)
 		(uuid "24356106-daa7-45e3-bd97-6ed9c0c5bb70")
 	)
-	(label "S3"
-		(at 26.67 29.21 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "278bc9fa-bf6a-4419-b0b7-6eda97968bbd")
-	)
 	(label "I2C0.SDA"
-		(at 45.72 21.59 0)
+		(at 36.83 21.59 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2621,16 +2505,6 @@
 		)
 		(uuid "48fbaa4a-17fc-42bc-b8d8-9ea7bd8bfe72")
 	)
-	(label "S0"
-		(at 26.67 21.59 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "501a6e8f-92ed-4016-821c-9df586e868ba")
-	)
 	(label "S1"
 		(at 91.44 81.28 180)
 		(effects
@@ -2660,16 +2534,6 @@
 			(justify left bottom)
 		)
 		(uuid "6fc6a55a-a8c0-442e-8918-9277560ba909")
-	)
-	(label "S1"
-		(at 26.67 24.13 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "7099e322-5a05-4717-9ea9-7f7b8dde94cf")
 	)
 	(label "S3"
 		(at 26.67 73.66 180)
@@ -2721,16 +2585,6 @@
 		)
 		(uuid "befca683-08e7-480e-a4d9-8d4a62510290")
 	)
-	(label "S2"
-		(at 26.67 26.67 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "bff505e9-fb64-470d-93a1-535a36d07118")
-	)
 	(label "S1"
 		(at 146.05 33.02 0)
 		(effects
@@ -2742,7 +2596,7 @@
 		(uuid "d185bcf9-4e61-4398-9e2e-18dddae9300e")
 	)
 	(label "I2C0.SCL"
-		(at 45.72 24.13 0)
+		(at 36.83 24.13 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2762,7 +2616,7 @@
 		(uuid "d945b3f8-5523-4a92-b682-cea5709309d5")
 	)
 	(label "I2C1.SCL"
-		(at 45.72 33.02 0)
+		(at 36.83 33.02 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2803,7 +2657,7 @@
 	)
 	(hierarchical_label "I2C1{I2C}"
 		(shape bidirectional)
-		(at 41.91 26.67 180)
+		(at 33.02 26.67 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2814,7 +2668,7 @@
 	)
 	(hierarchical_label "I2C0{I2C}"
 		(shape bidirectional)
-		(at 41.91 17.78 180)
+		(at 33.02 17.78 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2822,17 +2676,6 @@
 			(justify right)
 		)
 		(uuid "49eb04bc-7e24-45c8-966b-6099599d5ae9")
-	)
-	(hierarchical_label "S[0..3]"
-		(shape input)
-		(at 22.86 17.78 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "87f46740-d2ee-4d73-a4e8-850fcd5b8f0d")
 	)
 	(symbol
 		(lib_id "power:+5V")
@@ -3552,7 +3395,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SOP50P490X110-10N"
+		(property "Footprint" "SamacSys_Parts:SOP50P490X110-10N"
 			(at 101.6 126.67 0)
 			(effects
 				(font

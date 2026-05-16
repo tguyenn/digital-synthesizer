@@ -1406,7 +1406,7 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 41.91) (xy 76.2 41.91)
+			(xy 63.5 41.91) (xy 78.74 41.91)
 		)
 		(stroke
 			(width 0)
@@ -1444,7 +1444,17 @@
 		)
 		(uuid "e9a6347d-ad33-4370-99a1-1a4bc4cf889f")
 	)
-	(label "DOUT_3V3"
+	(label "LED_DATA_5V"
+		(at 38.1 76.2 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "35756b6f-e7a0-47ed-be12-5c4576cad737")
+	)
+	(label "LED_DATA"
 		(at 30.48 21.59 0)
 		(effects
 			(font
@@ -1454,7 +1464,7 @@
 		)
 		(uuid "3be1668b-a1c9-4c81-868a-327a401795d0")
 	)
-	(label "DOUT_3V3"
+	(label "LED_DATA"
 		(at 26.67 41.91 180)
 		(effects
 			(font
@@ -1464,17 +1474,7 @@
 		)
 		(uuid "6e961564-3814-4a16-88b4-8123b8b1c928")
 	)
-	(label "DOUT_5V"
-		(at 38.1 76.2 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "9c16bb46-c8aa-4c41-8ed4-18139e2e4998")
-	)
-	(label "DOUT_5V"
+	(label "LED_DATA_5V"
 		(at 63.5 39.37 0)
 		(effects
 			(font
@@ -2196,7 +2196,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 76.2 41.91 0)
+		(at 78.74 41.91 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2204,7 +2204,7 @@
 		(dnp no)
 		(uuid "c05f768c-199e-4e5d-9aad-9380beda0a0c")
 		(property "Reference" "#PWR0804"
-			(at 76.2 45.72 0)
+			(at 78.74 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2213,7 +2213,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 76.2 37.846 0)
+			(at 78.74 37.846 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2221,7 +2221,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 76.2 41.91 0)
+			(at 78.74 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2230,7 +2230,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 76.2 41.91 0)
+			(at 78.74 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2239,7 +2239,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 76.2 41.91 0)
+			(at 78.74 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)

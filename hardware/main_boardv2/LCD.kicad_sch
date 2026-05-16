@@ -1226,6 +1226,16 @@
 		)
 		(uuid c93b6ac3-8280-4ad5-9057-f33e58614aac)
 	)
+	(text "todo: verify if this is true or not"
+		(exclude_from_sim no)
+		(at 42.926 76.2 0)
+		(effects
+			(font
+				(size 3 3)
+			)
+		)
+		(uuid "0dbfc0b3-4554-47d7-8dd7-47773bf49738")
+	)
 	(text "LCD"
 		(exclude_from_sim no)
 		(at 18.542 45.212 0)

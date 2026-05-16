@@ -144,4 +144,16 @@ K
 F https://www.winbond.com/hq/search-resource-file.jsp?partNo=W25Q128JVSIQ&type=datasheet
 $ENDCMP
 #
+$CMP AP64060TQWU-7
+D 4.5V TO 40V INPUT, 600mA SYNCHRONOUS BUCK WITH ENHANCED EMI REDUCTION, -40C to +125C
+K
+F https://www.diodes.com/datasheet/download/AP64060Q_AP64060TQ_AP64060ZQ.pdf
+$ENDCMP
+#
+$CMP LMLP07A7M100DTAS
+D Fixed Inductors 10uH DCR= 68mOhm 20% 07A7
+K
+F https://www.mouser.es/datasheet/2/40/LMLPD-1774090.pdf
+$ENDCMP
+#
 #End Doc Library
