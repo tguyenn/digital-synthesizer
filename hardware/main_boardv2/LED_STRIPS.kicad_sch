@@ -316,6 +316,179 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:R_US"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.54 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R_US"
+				(at -2.54 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 1.016 -0.254 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor, US symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_US_0_1"
+				(polyline
+					(pts
+						(xy 0 2.286) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.286) (xy 1.016 1.905) (xy 0 1.524) (xy -1.016 1.143) (xy 0 0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0.762) (xy 1.016 0.381) (xy 0 0) (xy -1.016 -0.381) (xy 0 -0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -0.762) (xy 1.016 -1.143) (xy 0 -1.524) (xy -1.016 -1.905) (xy 0 -2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.286) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_US_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "ECE445L:C"
 			(pin_numbers
 				(hide yes)
@@ -1224,16 +1397,6 @@
 		)
 		(uuid "4a054ce1-5f93-406f-a656-1f278c0421d5")
 	)
-	(text "todo: put damping resistor on data!\n\ndo i need a damping resistor on 3v3 side of level shifter as well?\n"
-		(exclude_from_sim no)
-		(at 83.058 68.58 0)
-		(effects
-			(font
-				(size 3 3)
-			)
-		)
-		(uuid "5311efdf-c0de-42ce-9345-e209933232cf")
-	)
 	(text "2A max"
 		(exclude_from_sim no)
 		(at 18.288 103.124 0)
@@ -1271,10 +1434,16 @@
 		(uuid "3296c761-e90e-4f96-a8cb-6b80609e9c5b")
 	)
 	(junction
-		(at 33.02 41.91)
+		(at 59.69 78.74)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "d9dbf063-b7db-4125-860e-3e0eefc2a04c")
+		(uuid "c536afe6-aa6b-4a97-8272-1714a289a17b")
+	)
+	(junction
+		(at 27.94 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "da0b1e2f-d189-490a-a4d2-814812a523c3")
 	)
 	(junction
 		(at 63.5 41.91)
@@ -1296,27 +1465,7 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 41.91) (xy 33.02 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "061b3b32-b0c6-4771-8f92-7672ecc2af62")
-	)
-	(wire
-		(pts
-			(xy 33.02 41.91) (xy 38.1 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2323af06-8b0f-4f47-b306-6b289219d07d")
-	)
-	(wire
-		(pts
-			(xy 53.34 78.74) (xy 69.85 78.74)
+			(xy 53.34 78.74) (xy 59.69 78.74)
 		)
 		(stroke
 			(width 0)
@@ -1336,13 +1485,33 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 71.12) (xy 69.85 71.12)
+			(xy 36.83 41.91) (xy 38.1 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "317a7e5f-0af6-4d9f-8e54-a568fa2fde2e")
+	)
+	(wire
+		(pts
+			(xy 52.07 71.12) (xy 71.12 71.12)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "3b13b0ea-371d-4721-af91-a62c49d6c725")
+	)
+	(wire
+		(pts
+			(xy 24.13 41.91) (xy 27.94 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "431b81af-f416-4426-b1a8-4d3411d529c5")
 	)
 	(wire
 		(pts
@@ -1366,7 +1535,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 76.2) (xy 55.88 76.2)
+			(xy 36.83 76.2) (xy 45.72 76.2)
 		)
 		(stroke
 			(width 0)
@@ -1393,6 +1562,16 @@
 			(type default)
 		)
 		(uuid "74e7ab77-b639-42d7-a1b4-f0f9922a35d5")
+	)
+	(wire
+		(pts
+			(xy 59.69 78.74) (xy 71.12 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "83b2adb5-c556-4410-9df5-a689cf76d3e2")
 	)
 	(wire
 		(pts
@@ -1436,6 +1615,16 @@
 	)
 	(wire
 		(pts
+			(xy 53.34 76.2) (xy 59.69 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cb53bf2b-da23-4556-bc6d-2149f23e4c97")
+	)
+	(wire
+		(pts
 			(xy 38.1 53.34) (xy 38.1 44.45)
 		)
 		(stroke
@@ -1444,8 +1633,28 @@
 		)
 		(uuid "e9a6347d-ad33-4370-99a1-1a4bc4cf889f")
 	)
-	(label "LED_DATA_5V"
-		(at 38.1 76.2 0)
+	(wire
+		(pts
+			(xy 27.94 41.91) (xy 29.21 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f94ad2d0-c0d2-4e75-9742-e47896f41061")
+	)
+	(label "DOUT5V"
+		(at 63.5 39.37 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "34d9bf28-e645-4989-8d99-dc450d5c282f")
+	)
+	(label "DOUT5V"
+		(at 59.69 76.2 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1465,7 +1674,7 @@
 		(uuid "3be1668b-a1c9-4c81-868a-327a401795d0")
 	)
 	(label "LED_DATA"
-		(at 26.67 41.91 180)
+		(at 24.13 41.91 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1473,16 +1682,6 @@
 			(justify right bottom)
 		)
 		(uuid "6e961564-3814-4a16-88b4-8123b8b1c928")
-	)
-	(label "LED_DATA_5V"
-		(at 63.5 39.37 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "dd385675-6222-4aa7-a909-084fdee800b6")
 	)
 	(hierarchical_label "LED_DATA"
 		(shape input)
@@ -1759,7 +1958,7 @@
 	)
 	(symbol
 		(lib_id "ECE445L:C")
-		(at 69.85 74.93 0)
+		(at 71.12 74.93 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1767,7 +1966,7 @@
 		(dnp no)
 		(uuid "53f68088-7575-472a-b65f-37bb861d9b33")
 		(property "Reference" "C802"
-			(at 73.406 73.66 0)
+			(at 74.676 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1776,7 +1975,7 @@
 			)
 		)
 		(property "Value" "10u"
-			(at 73.406 76.2 0)
+			(at 74.676 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1785,7 +1984,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 70.8152 78.74 0)
+			(at 72.0852 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1794,7 +1993,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 69.85 74.93 0)
+			(at 71.12 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1803,7 +2002,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 69.85 74.93 0)
+			(at 71.12 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1812,7 +2011,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/Samsung-Electro-Mechanics/CL21A106KPFNNNE?qs=sGAEpiMZZMt7gvpyg0xT8jBAVP%252BdkPhuUJvUBe19zr8%3D"
-			(at 69.85 74.93 0)
+			(at 71.12 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1837,15 +2036,15 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 55.88 76.2 0)
+		(at 59.69 78.74 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(uuid "6962e87c-e8d3-4981-83cb-bcbea3c07290")
-		(property "Reference" "TP802"
-			(at 56.896 73.152 0)
+		(uuid "5519f80c-5d49-4d4d-be87-25da8901c43f")
+		(property "Reference" "TP803"
+			(at 66.294 84.328 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1853,8 +2052,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "DOUT"
-			(at 57.15 75.184 0)
+		(property "Value" "GND"
+			(at 66.04 81.788 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1863,7 +2062,7 @@
 			)
 		)
 		(property "Footprint" "SamacSys_Parts:bettertestpoint2"
-			(at 60.96 76.2 0)
+			(at 54.61 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1872,7 +2071,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 60.96 76.2 0)
+			(at 54.61 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1881,7 +2080,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 55.88 76.2 0)
+			(at 59.69 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1890,7 +2089,82 @@
 			)
 		)
 		(property "Mouser Price/Inventory" ""
-			(at 55.88 76.2 0)
+			(at 59.69 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7f621e32-b091-404e-a16d-fd201bdc57c6")
+		)
+		(instances
+			(project "main_boardv2"
+				(path "/5332464e-0c3a-49d2-8fb5-731d0e42ee15/efc14d49-5591-4687-bd9d-a48f4b92c254"
+					(reference "TP803")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 59.69 76.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "6962e87c-e8d3-4981-83cb-bcbea3c07290")
+		(property "Reference" "TP802"
+			(at 60.706 73.152 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "DOUT5V"
+			(at 52.07 75.184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "SamacSys_Parts:bettertestpoint2"
+			(at 64.77 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 64.77 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 59.69 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Inventory" ""
+			(at 59.69 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1912,7 +2186,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 33.02 41.91 0)
+		(at 27.94 41.91 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -1920,7 +2194,7 @@
 		(dnp no)
 		(uuid "6db17b5a-1e1a-40ab-a2f2-c10b51913fb7")
 		(property "Reference" "TP801"
-			(at 25.908 38.1 0)
+			(at 20.828 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1929,7 +2203,7 @@
 			)
 		)
 		(property "Value" "DOUT3V3"
-			(at 24.384 35.814 0)
+			(at 19.304 35.814 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1938,7 +2212,7 @@
 			)
 		)
 		(property "Footprint" "SamacSys_Parts:bettertestpoint2"
-			(at 38.1 41.91 0)
+			(at 33.02 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1947,7 +2221,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 38.1 41.91 0)
+			(at 33.02 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1956,7 +2230,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 33.02 41.91 0)
+			(at 27.94 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1965,7 +2239,7 @@
 			)
 		)
 		(property "Mouser Price/Inventory" ""
-			(at 33.02 41.91 0)
+			(at 27.94 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1980,6 +2254,140 @@
 			(project "main_board"
 				(path "/5332464e-0c3a-49d2-8fb5-731d0e42ee15/efc14d49-5591-4687-bd9d-a48f4b92c254"
 					(reference "TP801")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 33.02 41.91 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "745cf978-d932-41e0-884a-6d7be3e232fc")
+		(property "Reference" "R801"
+			(at 33.02 37.592 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "27"
+			(at 33.02 39.624 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 33.274 40.894 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 33.02 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 33.02 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1a04c9c7-2e9d-40a2-9099-adf7145b4741")
+		)
+		(pin "1"
+			(uuid "1e76b3c5-4894-4bf2-8057-bc43ec00eada")
+		)
+		(instances
+			(project "main_boardv2"
+				(path "/5332464e-0c3a-49d2-8fb5-731d0e42ee15/efc14d49-5591-4687-bd9d-a48f4b92c254"
+					(reference "R801")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 49.53 76.2 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a5854e00-7ff8-45d3-9ba0-c38866785d66")
+		(property "Reference" "R802"
+			(at 44.196 77.47 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "27"
+			(at 53.34 77.47 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 49.784 75.184 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 49.53 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 49.53 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "9890609e-ff90-4863-ba13-5aad135c3dcf")
+		)
+		(pin "1"
+			(uuid "e34cd14a-bbe9-4968-a185-77ad2ca77ed2")
+		)
+		(instances
+			(project ""
+				(path "/5332464e-0c3a-49d2-8fb5-731d0e42ee15/efc14d49-5591-4687-bd9d-a48f4b92c254"
+					(reference "R802")
 					(unit 1)
 				)
 			)

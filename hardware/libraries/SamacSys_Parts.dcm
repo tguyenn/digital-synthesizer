@@ -156,4 +156,16 @@ K
 F https://www.mouser.es/datasheet/2/40/LMLPD-1774090.pdf
 $ENDCMP
 #
+$CMP TPD3E001DRLR
+D Low-Capacitance 3-Channel +/-15KV ESD-Protection Array for High-Speed Data Interfaces
+K
+F http://www.ti.com/lit/ds/symlink/tpd3e001.pdf
+$ENDCMP
+#
+$CMP AT25FF161A-SHN-B
+D The AT25FF161A is a member of our Standard class code and data storage solutions and is ideally suited for systems that need fast Read performance and low Sleep power for boot/code shadowing and Execute-in-Place tasks. Its low power consumption and wide operating voltage range are optimized for battery-powered designs.
+K
+F https://www.renesas.com/us/en/products/memory-logic/non-volatile-memory/spi-nor-flash/dual-quad-spi-memory/at25ff161a-16mbit-165-v-36-v-spi-serial-flash-memory-multi-io-support
+$ENDCMP
+#
 #End Doc Library

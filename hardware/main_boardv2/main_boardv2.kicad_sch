@@ -145,6 +145,16 @@
 		)
 		(uuid "2ac3d707-212b-48b1-bc3d-e7620e220eaa")
 	)
+	(text "TODO: remap logic analyzer things"
+		(exclude_from_sim no)
+		(at 119.126 33.02 0)
+		(effects
+			(font
+				(size 3 3)
+			)
+		)
+		(uuid "66116011-e98c-4d16-8a32-49afa1b7b042")
+	)
 	(no_connect
 		(at 261.62 147.32)
 		(uuid "5b425114-f1b2-43ca-8978-a322e1855343")
@@ -803,7 +813,7 @@
 				(justify right)
 			)
 		)
-		(pin "LCD_DC" output
+		(pin "DC_LCD" output
 			(at 133.35 97.79 0)
 			(uuid "0d87d4e4-851e-44c9-8394-a5b48df73ca2")
 			(effects
@@ -873,7 +883,7 @@
 				(justify left)
 			)
 		)
-		(pin "I2C1{I2C}" bidirectional
+		(pin "S[0..3]" output
 			(at 107.95 100.33 180)
 			(uuid "f3d8c566-b31f-4460-ae93-3c914ce2c36a")
 			(effects
@@ -955,7 +965,7 @@
 				(justify left)
 			)
 		)
-		(pin "I2C1{I2C}" bidirectional
+		(pin "S[0..3]" input
 			(at 109.22 130.81 180)
 			(uuid "efeabf5e-d7f1-44b2-b752-8fcf239bdcb3")
 			(effects
@@ -1275,7 +1285,7 @@
 				(justify left)
 			)
 		)
-		(pin "LCD_DC" input
+		(pin "DC_LCD" input
 			(at 151.13 114.3 180)
 			(uuid "38689f70-6ac3-4e62-95cc-51d92262b93b")
 			(effects

@@ -5,6 +5,113 @@
 	(uuid "aedc9b53-7997-4669-980c-0977130284e4")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "ECE445L:C"
 			(pin_numbers
 				(hide yes)
@@ -1276,9 +1383,9 @@
 		)
 		(uuid "b49123a1-e905-4d49-8e4d-e067d1d20b94")
 	)
-	(text "Chn 0 - N/C\nChn 1 - SPI0.MOSI\nChn 2 - SPI0.SCK\nChn 3 - SPI0.MISO\nChn 4 - LCD_DC\nChn 5 - CS_LCD\nChn 6 - CS_SD\nChn 7 - N/C"
+	(text "Chn 0 - SPI0.MOSI\nChn 1 - SPI0.SCK\nChn 2 - SPI0.MISO\nChn 3 - DC_LCD\nChn 4 - CS_LCD\nChn 5 - CS_SD\nChn 6 - N/C\nChn 7 - N/C"
 		(exclude_from_sim no)
-		(at 55.626 133.858 0)
+		(at 54.356 128.27 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1304,6 +1411,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "97dbd5cc-eec6-4528-8a05-5c465b74a0b5")
+	)
+	(junction
+		(at 83.82 76.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "be7cd28a-f8d3-4485-a5a5-e1e5e829e83d")
 	)
 	(junction
 		(at 76.2 58.42)
@@ -1466,7 +1579,7 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 76.2) (xy 87.63 76.2)
+			(xy 81.28 76.2) (xy 83.82 76.2)
 		)
 		(stroke
 			(width 0)
@@ -1493,6 +1606,16 @@
 			(type default)
 		)
 		(uuid "82e77a59-56a7-4218-beb0-d52d689c7487")
+	)
+	(wire
+		(pts
+			(xy 83.82 76.2) (xy 87.63 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d28cf82-254a-405f-8f7b-896dac6f4fcd")
 	)
 	(bus
 		(pts
@@ -1624,7 +1747,7 @@
 		)
 		(uuid "1ff09208-0b94-409c-8257-b6374ca075be")
 	)
-	(label "LCD_DC"
+	(label "DC_LCD"
 		(at 35.56 73.66 180)
 		(effects
 			(font
@@ -1664,7 +1787,7 @@
 		)
 		(uuid "5b295b67-d713-4c05-929e-89da0c3145a5")
 	)
-	(label "LCD_DC"
+	(label "DC_LCD"
 		(at 29.21 39.37 0)
 		(effects
 			(font
@@ -1724,7 +1847,7 @@
 		)
 		(uuid "be4b8cf4-0597-4664-a473-d084aa2886b2")
 	)
-	(label "LCD_DC"
+	(label "DC_LCD"
 		(at 38.1 124.46 0)
 		(effects
 			(font
@@ -1817,7 +1940,7 @@
 		)
 		(uuid "53fb002e-eaf1-4d33-8c92-87963843d78d")
 	)
-	(hierarchical_label "LCD_DC"
+	(hierarchical_label "DC_LCD"
 		(shape input)
 		(at 27.94 39.37 180)
 		(effects
@@ -2098,6 +2221,81 @@
 			(project "main_board"
 				(path "/5332464e-0c3a-49d2-8fb5-731d0e42ee15/f60196d5-a61c-416f-993a-faa1a0858c5e"
 					(reference "#PWR0703")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 83.82 76.2 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "853e603c-1f32-41dc-a56b-b26f9cc5a491")
+		(property "Reference" "TP701"
+			(at 90.424 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "GND"
+			(at 90.17 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "SamacSys_Parts:bettertestpoint2"
+			(at 78.74 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 78.74 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 83.82 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Inventory" ""
+			(at 83.82 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "74c5d05a-2c9d-470b-af57-d7683f00b00e")
+		)
+		(instances
+			(project "main_boardv2"
+				(path "/5332464e-0c3a-49d2-8fb5-731d0e42ee15/f60196d5-a61c-416f-993a-faa1a0858c5e"
+					(reference "TP701")
 					(unit 1)
 				)
 			)
