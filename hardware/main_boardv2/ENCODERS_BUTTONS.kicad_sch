@@ -2217,7 +2217,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 34.798 59.69 90)
 			(effects
 				(font
@@ -2244,7 +2244,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/YAGEO/RV0805JR-0710KL?qs=qpJ%252B%252B%252Bdg6p3bGiIDT3p%252B0w%3D%3D"
+		(property "Mouser Price/Stock" ""
 			(at 33.02 59.69 0)
 			(effects
 				(font
@@ -2375,7 +2375,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 39.878 59.69 90)
 			(effects
 				(font
@@ -2402,7 +2402,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/YAGEO/RV0805JR-0710KL?qs=qpJ%252B%252B%252Bdg6p3bGiIDT3p%252B0w%3D%3D"
+		(property "Mouser Price/Stock" ""
 			(at 38.1 59.69 0)
 			(effects
 				(font
@@ -2453,7 +2453,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 34.798 93.98 90)
 			(effects
 				(font
@@ -2480,7 +2480,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/YAGEO/RV0805JR-0710KL?qs=qpJ%252B%252B%252Bdg6p3bGiIDT3p%252B0w%3D%3D"
+		(property "Mouser Price/Stock" ""
 			(at 33.02 93.98 0)
 			(effects
 				(font
@@ -2898,7 +2898,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 39.878 93.98 90)
 			(effects
 				(font
@@ -2925,7 +2925,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/YAGEO/RV0805JR-0710KL?qs=qpJ%252B%252B%252Bdg6p3bGiIDT3p%252B0w%3D%3D"
+		(property "Mouser Price/Stock" ""
 			(at 38.1 93.98 0)
 			(effects
 				(font

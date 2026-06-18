@@ -3255,7 +3255,7 @@
 	)
 	(text "USBC"
 		(exclude_from_sim no)
-		(at 50.8 15.24 0)
+		(at 51.562 15.494 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3312,6 +3312,16 @@
 			)
 		)
 		(uuid "4bd232b2-9e5f-4709-b754-a2f6bdd93d66")
+	)
+	(text "TODO: verify this"
+		(exclude_from_sim no)
+		(at 217.424 29.972 0)
+		(effects
+			(font
+				(size 3 3)
+			)
+		)
+		(uuid "5a7721f9-dc6e-4379-9358-135671b735f0")
 	)
 	(text "GRN"
 		(exclude_from_sim no)
@@ -3412,6 +3422,17 @@
 			)
 		)
 		(uuid "c95953a9-6255-49c2-8a48-73bd3c441766")
+	)
+	(text "1 - V+\n2 - GND\n3 - Breaks contact when plug insert"
+		(exclude_from_sim no)
+		(at 173.736 70.612 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ca505b42-a5ce-4496-a515-2da3ab541401")
 	)
 	(text "design decision:\nwe could forego this usbc connector entirely to have just one possible power connector\n\nthe rp2040 has an SWD interface that we can use to program instead of having to use the funny USB bootloader"
 		(exclude_from_sim no)
@@ -4486,7 +4507,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 116.586 43.434 90)
 			(effects
 				(font
@@ -4513,7 +4534,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/YAGEO/AF0805JR-07470RL?qs=tggtontpCXOaQg0VhtuXeg%3D%3D"
+		(property "Mouser Price/Stock" ""
 			(at 115.57 43.18 0)
 			(effects
 				(font
@@ -4565,7 +4586,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 78.486 92.964 90)
 			(effects
 				(font
@@ -4592,7 +4613,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/YAGEO/AF0805JR-07470RL?qs=tggtontpCXOaQg0VhtuXeg%3D%3D"
+		(property "Mouser Price/Stock" ""
 			(at 77.47 92.71 0)
 			(effects
 				(font
@@ -4787,7 +4808,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 63.246 91.694 90)
 			(effects
 				(font
@@ -4814,7 +4835,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/ROHM-Semiconductor/ESR03EZPJ152?qs=DyUWGjl%252BcVvm2NOHIcQYzQ%3D%3D"
+		(property "Mouser Price/Stock" ""
 			(at 62.23 91.44 0)
 			(effects
 				(font
@@ -5786,7 +5807,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 153.9748 97.79 0)
 			(effects
 				(font
@@ -5813,7 +5834,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/Walsin/MG21B104K500CT?qs=sGAEpiMZZMt7gvpyg0xT8jBHDtGZvLzXjlSfFWC8Jgc2tQbZi0zprA%3D%3D"
+		(property "Mouser Price/Stock" ""
 			(at 154.94 101.6 90)
 			(effects
 				(font
@@ -5864,7 +5885,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 104.4448 111.76 0)
 			(effects
 				(font
@@ -5891,7 +5912,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "2"
+		(property "Mouser Price/Stock" ""
 			(at 105.41 115.57 90)
 			(effects
 				(font
@@ -5942,7 +5963,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 199.0852 119.38 0)
 			(effects
 				(font
@@ -5969,7 +5990,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/Samsung-Electro-Mechanics/CL21A106KPFNNNE?qs=sGAEpiMZZMt7gvpyg0xT8jBAVP%252BdkPhuUJvUBe19zr8%3D"
+		(property "Mouser Price/Stock" ""
 			(at 198.12 115.57 0)
 			(effects
 				(font
@@ -6599,7 +6620,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 191.4652 119.38 0)
 			(effects
 				(font
@@ -6626,7 +6647,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/Samsung-Electro-Mechanics/CL21A106KPFNNNE?qs=sGAEpiMZZMt7gvpyg0xT8jBAVP%252BdkPhuUJvUBe19zr8%3D"
+		(property "Mouser Price/Stock" ""
 			(at 190.5 115.57 0)
 			(effects
 				(font
@@ -6743,7 +6764,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 112.776 43.434 90)
 			(effects
 				(font
@@ -6770,7 +6791,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/YAGEO/AF0805JR-07470RL?qs=tggtontpCXOaQg0VhtuXeg%3D%3D"
+		(property "Mouser Price/Stock" ""
 			(at 111.76 43.18 0)
 			(effects
 				(font
@@ -6952,7 +6973,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 169.926 112.014 90)
 			(effects
 				(font
@@ -7639,7 +7660,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 169.926 123.444 90)
 			(effects
 				(font
